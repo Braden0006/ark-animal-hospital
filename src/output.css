@@ -535,8 +535,8 @@ video {
   margin-bottom: 4rem;
 }
 
-.mb-24 {
-  margin-bottom: 6rem;
+.mb-28 {
+  margin-bottom: 7rem;
 }
 
 .mb-32 {
@@ -549,10 +549,6 @@ video {
 
 .mt-80 {
   margin-top: 20rem;
-}
-
-.mb-28 {
-  margin-bottom: 7rem;
 }
 
 .flex {
@@ -662,14 +658,14 @@ video {
   line-height: 5rem;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-paragraph-color {
   --tw-text-opacity: 1;
   color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
