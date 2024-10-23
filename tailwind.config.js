@@ -15,6 +15,10 @@ module.exports = {
       },
       lineHeight: {
         'loosey-goosey': '5rem',
+      },
+      height: {
+        '68': '17rem',
+        '70': '17.5rem',
       }
     },
   },
