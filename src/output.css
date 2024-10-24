@@ -567,6 +567,18 @@ video {
   margin-right: 6rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
+}
+
+.mt-48 {
+  margin-top: 12rem;
+}
+
 .mt-80 {
   margin-top: 20rem;
 }
@@ -579,32 +591,20 @@ video {
   height: 4rem;
 }
 
-.h-32 {
-  height: 8rem;
-}
-
-.h-70 {
-  height: 17.5rem;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
 .h-26 {
   height: 26rem;
 }
 
-.h-28 {
-  height: 7rem;
+.h-32 {
+  height: 8rem;
 }
 
-.h-20 {
-  height: 5rem;
+.h-36 {
+  height: 9rem;
 }
 
-.h-24 {
-  height: 6rem;
+.h-70 {
+  height: 17.5rem;
 }
 
 .min-h-screen {
@@ -619,6 +619,10 @@ video {
   width: 8rem;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
 .w-72 {
   width: 18rem;
 }
@@ -627,28 +631,16 @@ video {
   width: 100%;
 }
 
-.w-28 {
-  width: 7rem;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
-.w-24 {
-  width: 6rem;
-}
-
 .max-w-4xl {
   max-width: 56rem;
 }
 
-.flex-grow {
-  flex-grow: 1;
+.max-w-52rem {
+  max-width: 52rem;
 }
 
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.flex-grow {
+  flex-grow: 1;
 }
 
 .flex-col {
@@ -706,20 +698,9 @@ video {
   background-color: rgb(45 45 45 / var(--tw-bg-opacity));
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
-.p-8 {
-  padding: 2rem;
-}
-
-.p-12 {
-  padding: 3rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
+.bg-service-card-bg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 45 45 / var(--tw-bg-opacity));
 }
 
 .px-7 {
@@ -792,6 +773,10 @@ video {
   font-weight: 700;
 }
 
+.leading-4rem {
+  line-height: 4rem;
+}
+
 .leading-loosey-goosey {
   line-height: 5rem;
 }
@@ -804,6 +789,42 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .md\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .md\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .md\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .md\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .md\:container {
+      max-width: 1536px;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
