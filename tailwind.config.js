@@ -8,6 +8,7 @@ module.exports = {
         'button-bg': '#008080',
         'paragraph-color': '#333333',
         'service-card-bg': '#2D2D2D',
+        'body-bg': '#F0F8FF',
       },
       fontSize: {
         '2.5rem': ['2.5rem', {
