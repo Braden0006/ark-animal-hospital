@@ -527,6 +527,21 @@ video {
   margin-right: auto;
 }
 
+.my-64 {
+  margin-top: 16rem;
+  margin-bottom: 16rem;
+}
+
+.my-72 {
+  margin-top: 18rem;
+  margin-bottom: 18rem;
+}
+
+.my-80 {
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -741,6 +756,10 @@ video {
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-2\.5rem {
