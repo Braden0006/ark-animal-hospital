@@ -6,10 +6,26 @@
     <link href="output.css" rel="stylesheet">
 </head>
 <body class="flex flex-col min-h-screen bg-body-bg">
-    <nav class="bg-navigation-bg">
-        <div class="flex justify-between items-center w-full max-w-4xl mx-auto py-6 lg:container lg:mx-auto">
+    <nav class="bg-navigation-bg lg:hidden">
+        <div class="flex justify-between items-center w-full max-w-4xl mx-auto py-6">
             <span class="text-5xl font-bold text-white">LOGO</span>
             <span class="text-6xl font-bold text-white">=</span>
+        </div>
+    </nav>
+
+    <nav class="hidden lg:bg-navigation-bg lg:flex">
+        <div class="flex py-6 justify-between items-center container mx-auto">
+            <span class="text-white text-lg">LOGO</span>
+
+            <div class="flex gap-8">
+                <h3 class="text-white text-sm">About</h3>
+                <h3 class="text-white text-sm">Services</h3>
+                <h3 class="text-white text-sm">Finance Options</h3>
+            </div>
+
+            <button class="rounded-sm bg-button-bg py-2 px-5 text-white text-sm">
+                Schedule
+            </button>
         </div>
     </nav>
 
