@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Ark Animal Hospital</title>
-    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link href="index.css" rel="stylesheet">
 </head>
-<body class="flex flex-col min-h-screen bg-body-bg">
-    <nav class="bg-navigation-bg lg:hidden">
-        <div class="flex justify-between items-center w-full max-w-4xl mx-auto py-6">
-            <span class="text-5xl font-bold text-white">LOGO</span>
+<body>
+    <nav class="navbar_mobile">
+        <div class="navbar_item-container">
+            <span class="navbar_logo">LOGO</span>
 
-            <div class="flex flex-col gap-2.5">
+            <div class="navbar_hamburger-menu">
                 <div class="bg-white w-35px h-3px"></div>
                 <div class="bg-white w-35px h-3px"></div>
                 <div class="bg-white w-35px h-3px"></div>
@@ -18,7 +19,7 @@
         </div>
     </nav>
 
-    <nav class="hidden lg:bg-navigation-bg lg:flex">
+    <nav class="navbar_laptop">
         <div class="flex py-6 justify-between items-center container mx-auto">
             <span class="text-white text-lg">LOGO</span>
 
@@ -34,26 +35,26 @@
         </div>
     </nav>
 
-    <main class="flex-grow">
-        <section class="mt-80 flex flex-col items-baseline w-full max-w-52rem mx-auto">
-            <div class="">
-                <h1 class="text-8xl font-bold mb-16"><span>Veterinary</span><br> clinic in Wyoming</h1>
-                <p class=" mb-8 text-2.5rem">
+    <main>
+        <section class="landing-page">
+            <div class="landing-page_text">
+                <h1 class="landing-page_text_title"><span>Veterinary</span><br> clinic in Wyoming</h1>
+                <p class="landing-page_text_para">
                     With 20 years experience, our veterinarian and staff strives to keep you and your pet happy
                 </p>
-                <button class="mb-32 rounded-lg bg-button-bg py-4 px-7 text-white text-3xl">
+                <button class="landing-page_text_button">
                     Book Now
                 </button>
             </div>
-            <img src="images/dog.png" class="rounded-3xl">
+            <img src="images/dog.png" class="landing-page_image">
         </section>
 
-        <section class="mt-80 flex flex-col items-baseline w-full max-w-52rem mx-auto">
-            <div>
-                <img src="images/dog.png" class="rounded-3xl mb-28">
+        <section class="about-us">
+            <div class="about-us_container">
+                <img src="images/dog.png" class="about-us_image">
                 <div>
-                    <h2 class="text-6xl mb-12">About us</h2>
-                    <p class="text-4xl leading-loosey-goosey text-paragraph-color">
+                    <h2 class="about-us_title">About us</h2>
+                    <p class="about-us_para">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat, justo nec gravida auctor,
                         sem velit vehicula augue, id rhoncus lectus elit vel elit. Sed accumsan fermentum sem, vel fringilla
                         lacus pulvinar non. Vestibulum fermentum ante nec massa imperdiet, vel ultrices leo varius. Nunc vitae
@@ -64,12 +65,12 @@
             </div>
         </section>
 
-        <section class="mt-80 flex flex-col items-baseline w-full max-w-52rem mx-auto">
-            <div>
-                <img src="images/dog.png" class="rounded-3xl mb-28">
-                <div>
-                    <h2 class="text-6xl mb-12">Dr. Thorne</h2>
-                    <p class="text-4xl leading-loosey-goosey text-paragraph-color">
+        <section class="about-us_doctor">
+            <div class="about-us_doctor_container">
+                <img src="images/dog.png" class="about-us_doctor_image">
+                <div class="about-us_doctor_content-container">
+                    <h2 class="about-us_doctor_title">Dr. Thorne</h2>
+                    <p class="about-us_doctor_para">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat, justo nec gravida auctor,
                         sem velit vehicula augue, id rhoncus lectus elit vel elit. Sed accumsan fermentum sem, vel fringilla
                         lacus pulvinar non. Vestibulum fermentum ante nec massa imperdiet, vel ultrices leo varius. Nunc vitae
@@ -80,26 +81,26 @@
             </div>
         </section>
 
-        <section class="mt-80 flex flex-col w-full max-w-52rem mx-auto">
-            <div>
-                <h2 class="text-6xl mb-28">Our Team</h2>
-                <div class="flex flex-col items-center gap-24">
-                    <div class="flex flex-col items-center">
-                        <img src="images/dog.png" class="rounded-full h-70 w-72 mb-6">
-                        <h3 class="text-4xl mb-2">Sam</h3>
-                        <p class="text-3xl">Veterinary Technician</p>
+        <section class="our-team">
+            <div class="our-team_container">
+                <h2 class="our-team_title">Our Team</h2>
+                <div class="our-team_card-container">
+                    <div class="our-team_card">
+                        <img src="images/dog.png" class="our-team_card-image">
+                        <h3 class="our-team_card-name">Sam</h3>
+                        <p class="our-team_card-position">Veterinary Technician</p>
                     </div>
 
-                    <div class="flex flex-col items-center">
-                        <img src="images/dog.png" class="rounded-full h-70 w-72 mb-6">
-                        <h3 class="text-4xl mb-2">Andrew</h3>
-                        <p class="text-3xl">Veterinary Technician</p>
+                    <div class="our-team_card">
+                        <img src="images/dog.png" class="our-team_card-image">
+                        <h3 class="our-team_card-name">Andrew</h3>
+                        <p class="our-team_card-position">Veterinary Technician</p>
                     </div>
 
-                    <div class="flex flex-col items-center">
-                        <img src="images/dog.png" class="rounded-full h-70 w-72 mb-6">
-                        <h3 class="text-4xl mb-2">Andrew</h3>
-                        <p class="text-3xl">Veterinary Technician</p>
+                    <div class="our-team_card">
+                        <img src="images/dog.png" class="our-team_card-image">
+                        <h3 class="our-team_card-name">Andrew</h3>
+                        <p class="our-team_card-position">Veterinary Technician</p>
                     </div>
                 </div>
             </div>

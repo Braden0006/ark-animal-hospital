@@ -1,0 +1,228 @@
+$background-color: #F0F8FF;
+$navigation-bg: #2D2D2D;
+$button-bg: #008080;
+$paragraph-color: #333333;
+
+$breakpoint-desktop: 1440px;
+$breakpoint-laptop: 1024px;
+$breakpoint-tablet: 768px;
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $background-color;
+
+  .navbar_mobile {
+    background-color: $navigation-bg;
+
+    .navbar_item-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 56rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 1.5rem;
+
+      .navbar_logo {
+        font-size: 3rem;
+        font-weight: 700;
+        color: white;
+      }
+
+      .navbar_hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+
+        div {
+          background-color: white;
+          width: 35px;
+          height: 3px;
+        }
+      }
+    }
+
+    @media (min-width: $breakpoint-laptop) {
+      display: none;
+    }
+  }
+
+  .navbar_laptop {
+    display: none;
+  }
+
+  main {
+    flex-grow: 1;
+
+    .landing-page {
+      margin-top: 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      width: 100%;
+      max-width: 52rem;
+      margin-left: auto;
+      margin-right: auto;
+
+      .landing-page_text {
+
+        .landing-page_text_title {
+          font-size: 6rem;
+          font-weight: 700;
+          margin-bottom: 4rem;
+        }
+
+        .landing-page_text_para {
+          margin-bottom: 2rem;
+          font-size: 0.625rem;
+          line-height: 3rem;
+        }
+
+        .landing-page_text_button {
+          margin-bottom: 8rem;
+          border-radius: 0.5rem;
+          background-color: $button-bg;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          padding-left: 1.75rem;
+          padding-right: 1.75rem;
+          color: white;
+          font-size: 1.875rem;
+          line-height: 2.25rem;
+        }
+      }
+
+      .landing-page_image {
+        width: inherit;
+        border-radius: 1.5rem;
+      }
+    }
+
+    .about-us {
+      margin-top: 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      width: 100%;
+      max-width: 52rem;
+      margin-left: auto;
+      margin-right: auto;
+
+      .about-us_container {
+        width: inherit;
+
+        .about-us_image {
+          width: inherit;
+          border-radius: 1.5rem;
+          margin-bottom: 7rem;
+        }
+
+        .div {
+
+          .about-us_title {
+            font-size: 3.75rem;
+            line-height: 1;
+            margin-bottom: 3rem;
+          }
+
+          .about-us_para {
+            font-size: 2.25rem;
+            line-height: 5rem;
+            color: $paragraph-color;
+          }
+        }
+      }
+    }
+
+    .about-us_doctor {
+      margin-top: 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      width: 100%;
+      max-width: 52rem;
+      margin-left: auto;
+      margin-right: auto;
+
+      .about-us_doctor_container {
+        width: inherit;
+
+        .about-us_doctor_image {
+          width: inherit;
+          border-radius: 1.5rem;
+          margin-bottom: 7rem
+        }
+
+        .about-us_doctor_content-container {
+
+          .about-us_doctor_title {
+            font-size: 3.75rem;
+            line-height: 1;
+            margin-bottom: 3rem;
+          }
+
+          .about-us_doctor_para {
+            font-size: 2.25rem;
+            line-height: 5rem;
+            color: $paragraph-color;
+          }
+        }
+      }
+    }
+
+    .our-team {
+      margin-top: 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      width: 100%;
+      max-width: 52rem;
+      margin-left: auto;
+      margin-right: auto;
+
+      .our-team_container {
+        width: inherit;
+
+        .our-team_title {
+          font-size: 3.75rem;
+          line-height: 1;
+          margin-bottom: 7rem;
+        }
+
+        .our-team_card-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 6rem;
+
+          .our-team_card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .our-team_card-image {
+              border-radius: 9999px;
+              height: 17.5rem;
+              width: 18rem;
+              margin-bottom: 1.5rem;
+            }
+
+            .our-team_card-name {
+              font-size: 2.25rem;
+              line-height: 2.5rem;
+              margin-bottom: 0.5rem;
+            }
+
+            .our-team_card-position {
+              font-size: 1.875rem;
+              line-height: 2.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
