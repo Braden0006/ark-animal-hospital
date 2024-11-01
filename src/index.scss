@@ -25,6 +25,7 @@ body {
       margin-left: auto;
       margin-right: auto;
       padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
 
       .navbar_logo {
         font-size: 3rem;
@@ -77,8 +78,8 @@ body {
 
         .landing-page_text_para {
           margin-bottom: 2rem;
-          font-size: 0.625rem;
-          line-height: 3rem;
+          font-size: 2.25rem;
+          line-height: 3.5rem;
         }
 
         .landing-page_text_button {
@@ -120,7 +121,7 @@ body {
           margin-bottom: 7rem;
         }
 
-        .div {
+        .about_us_container_info {
 
           .about-us_title {
             font-size: 3.75rem;
@@ -222,6 +223,198 @@ body {
             }
           }
         }
+      }
+    }
+
+    .our-services {
+      margin-top: 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      width: 100%;
+      max-width: 52rem;
+      margin-left: auto;
+      margin-right: auto;
+
+      .our_services_container {
+
+        .our-services_title {
+          font-size: 3.75rem;
+          line-height: 1;
+          margin-bottom: 7rem;
+        }
+
+        .our-services_card-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 4rem;
+
+          .our-services_card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 30rem;
+            background-color: black;
+            border-radius: 1rem;
+            padding-top: 2.5rem;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            padding-bottom: 1.5rem;
+            margin-left: 6rem;
+            margin-right: 6rem;
+
+            .our-services_card_title {
+              color: white;
+              font-size: 2.25rem;
+              line-height: 2.5rem;
+              margin-bottom: 1rem;
+            }
+
+            .our-services_card_para {
+              color: white;
+              font-size: 1.875rem;
+              line-height: 2.25rem;
+              margin-bottom: 2rem;
+            }
+
+            .our_services_card_svg_container {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .our_services_card_svg_button {
+                color: white;
+                font-size: 1.5rem;
+                line-height: 2rem;
+
+                .our_services_card_svg {
+                  height: 4rem;
+                  width: 4rem;
+                }
+              }
+
+              .our_services_card_svg_2 {
+                height: 8rem;
+                width: 8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .finance_help {
+      margin-top: 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      width: 100%;
+      max-width: 52rem;
+      margin-left: auto;
+      margin-right: auto;
+
+      .finance_help_title {
+        font-size: 3.75rem;
+        line-height: 1rem;
+        margin-bottom: 4rem;
+      }
+
+      .finance_help_para {
+        font-size: 1.875rem;
+        line-height: 4rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .finance_help_button_container {
+        display: flex;
+        gap: 2rem;
+
+        .finance_help_button {
+          border-radius: 0.5rem;
+          background-color: $button-bg;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          padding-right: 1.75rem;
+          padding-left: 1.75rem;
+          color: white;
+          font-size: 1.875rem;
+          line-height: 2.25rem;
+        }
+      }
+    }
+
+    .cta {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20rem;
+      background-color: $navigation-bg;
+
+      .cta_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 52rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20rem;
+        margin-bottom: 20rem;
+
+        .cta_title {
+          font-size: 3.75rem;
+          margin-bottom: 4rem;
+          color: white;
+          line-height: 5rem;
+          text-align: center;
+        }
+
+        .cta_button {
+          border-radius: 0.5rem;
+          background-color: $button-bg;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          padding-right: 1.75rem;
+          padding-left: 1.75rem;
+          color: white;
+          font-size: 1.875rem;
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 85dvw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    .footer_container {
+
+      .footer_logo {
+        margin-bottom: 1rem;
+        font-size: 2.25rem;
+      }
+
+      .footer_facebook {
+        height: 2.5rem;
+        width: 2.5rem;
+      }
+    }
+
+    .footer_container_info {
+
+      .footer_street {
+        margin-bottom: 2rem;
+        font-size: 1.25rem;
+      }
+
+      .footer_number {
+        margin-bottom: 0.25rem;
+        font-size: 1.25rem;
       }
     }
   }

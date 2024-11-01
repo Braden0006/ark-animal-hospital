@@ -16,6 +16,7 @@ body .navbar_mobile .navbar_item-container {
   margin-left: auto;
   margin-right: auto;
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 body .navbar_mobile .navbar_item-container .navbar_logo {
   font-size: 3rem;
@@ -60,8 +61,8 @@ body main .landing-page .landing-page_text .landing-page_text_title {
 }
 body main .landing-page .landing-page_text .landing-page_text_para {
   margin-bottom: 2rem;
-  font-size: 0.625rem;
-  line-height: 3rem;
+  font-size: 2.25rem;
+  line-height: 3.5rem;
 }
 body main .landing-page .landing-page_text .landing-page_text_button {
   margin-bottom: 8rem;
@@ -97,12 +98,12 @@ body main .about-us .about-us_container .about-us_image {
   border-radius: 1.5rem;
   margin-bottom: 7rem;
 }
-body main .about-us .about-us_container .div .about-us_title {
+body main .about-us .about-us_container .about_us_container_info .about-us_title {
   font-size: 3.75rem;
   line-height: 1;
   margin-bottom: 3rem;
 }
-body main .about-us .about-us_container .div .about-us_para {
+body main .about-us .about-us_container .about_us_container_info .about-us_para {
   font-size: 2.25rem;
   line-height: 5rem;
   color: #333333;
@@ -178,6 +179,165 @@ body main .our-team .our-team_container .our-team_card-container .our-team_card 
 body main .our-team .our-team_container .our-team_card-container .our-team_card .our-team_card-position {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+body main .our-services {
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 100%;
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+body main .our-services .our_services_container .our-services_title {
+  font-size: 3.75rem;
+  line-height: 1;
+  margin-bottom: 7rem;
+}
+body main .our-services .our_services_container .our-services_card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+body main .our-services .our_services_container .our-services_card-container .our-services_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30rem;
+  background-color: black;
+  border-radius: 1rem;
+  padding-top: 2.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-bottom: 1.5rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+body main .our-services .our_services_container .our-services_card-container .our-services_card .our-services_card_title {
+  color: white;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+body main .our-services .our_services_container .our-services_card-container .our-services_card .our-services_card_para {
+  color: white;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-bottom: 2rem;
+}
+body main .our-services .our_services_container .our-services_card-container .our-services_card .our_services_card_svg_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .our-services .our_services_container .our-services_card-container .our-services_card .our_services_card_svg_container .our_services_card_svg_button {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+body main .our-services .our_services_container .our-services_card-container .our-services_card .our_services_card_svg_container .our_services_card_svg_button .our_services_card_svg {
+  height: 4rem;
+  width: 4rem;
+}
+body main .our-services .our_services_container .our-services_card-container .our-services_card .our_services_card_svg_container .our_services_card_svg_2 {
+  height: 8rem;
+  width: 8rem;
+}
+body main .finance_help {
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 100%;
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+body main .finance_help .finance_help_title {
+  font-size: 3.75rem;
+  line-height: 1rem;
+  margin-bottom: 4rem;
+}
+body main .finance_help .finance_help_para {
+  font-size: 1.875rem;
+  line-height: 4rem;
+  margin-bottom: 1.5rem;
+}
+body main .finance_help .finance_help_button_container {
+  display: flex;
+  gap: 2rem;
+}
+body main .finance_help .finance_help_button_container .finance_help_button {
+  border-radius: 0.5rem;
+  background-color: #008080;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1.75rem;
+  padding-left: 1.75rem;
+  color: white;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+body main .cta {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rem;
+  background-color: #2D2D2D;
+}
+body main .cta .cta_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+}
+body main .cta .cta_container .cta_title {
+  font-size: 3.75rem;
+  margin-bottom: 4rem;
+  color: white;
+  line-height: 5rem;
+  text-align: center;
+}
+body main .cta .cta_container .cta_button {
+  border-radius: 0.5rem;
+  background-color: #008080;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1.75rem;
+  padding-left: 1.75rem;
+  color: white;
+  font-size: 1.875rem;
+}
+body .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 85dvw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+body .footer .footer_container .footer_logo {
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+}
+body .footer .footer_container .footer_facebook {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+body .footer .footer_container_info .footer_street {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+body .footer .footer_container_info .footer_number {
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
 }
 
 /*# sourceMappingURL=index.css.map */
