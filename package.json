@@ -1,10 +1,4 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.4.14"
-  },
-  "scripts": {
-    "dev": "npx tailwindcss -i ./src/index.css -o ./src/output.css --watch"
-  },
   "dependencies": {
     "modern-normalize": "^3.0.1"
   }
