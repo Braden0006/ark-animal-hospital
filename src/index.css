@@ -4,6 +4,12 @@ body {
   min-height: 100vh;
   background-color: #F0F8FF;
 }
+
+.stop_scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 body .navbar_mobile {
   background-color: #2D2D2D;
 }
