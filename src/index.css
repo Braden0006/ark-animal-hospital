@@ -170,6 +170,7 @@ body main .our-team .our-team_container .our-team_card-container .our-team_card 
   height: 17.5rem;
   width: 18rem;
   margin-bottom: 1.5rem;
+  object-fit: cover;
 }
 body main .our-team .our-team_container .our-team_card-container .our-team_card .our-team_card-name {
   font-size: 2.25rem;
@@ -179,6 +180,61 @@ body main .our-team .our-team_container .our-team_card-container .our-team_card 
 body main .our-team .our-team_container .our-team_card-container .our-team_card .our-team_card-position {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+body main .our-team .modal_background {
+  height: 100dvh;
+  width: 100dvw;
+  background-color: #2D2D2D;
+  position: absolute;
+  opacity: 0.75;
+  left: 0;
+  display: none;
+}
+body main .our-team .our_team_card_modal {
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  position: absolute;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+body main .our-team .our_team_card_modal .our_team_card_modal_container {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  width: 70%;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+body main .our-team .our_team_card_modal .our_team_card_modal_container .modal_top_content {
+  display: flex;
+  align-items: center;
+}
+body main .our-team .our_team_card_modal .our_team_card_modal_container .modal_top_content .modal_image {
+  border-radius: 9999px;
+  height: 13.5rem;
+  width: 14rem;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  margin-right: 2rem;
+}
+body main .our-team .our_team_card_modal .our_team_card_modal_container .modal_top_content .modal_title {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+body main .our-team .our_team_card_modal .our_team_card_modal_container .modal_para {
+  font-size: 1.9rem;
+  color: #333333;
+  line-height: 2.75rem;
+}
+body main .our-team .show_modal_background {
+  display: block;
+}
+body main .our-team .show_modal {
+  display: flex;
 }
 body main .our-services {
   margin-top: 20rem;

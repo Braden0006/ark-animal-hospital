@@ -209,6 +209,7 @@ body {
               height: 17.5rem;
               width: 18rem;
               margin-bottom: 1.5rem;
+              object-fit: cover;
             }
 
             .our-team_card-name {
@@ -223,6 +224,70 @@ body {
             }
           }
         }
+      }
+
+      .modal_background {
+        height: 100dvh;
+        width: 100dvw;
+        background-color: #2D2D2D;
+        position: absolute;
+        opacity: 0.75;
+        left: 0;
+        display: none;
+      }
+
+      .our_team_card_modal {
+        height: 100dvh;
+        width: 100dvw;
+        display: flex;
+        position: absolute;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        display: none;
+
+        .our_team_card_modal_container {
+          display: flex;
+          flex-direction: column;
+          height: 40%;
+          width: 70%;
+          background-color: white;
+          border-radius: 2rem;
+          padding: 3rem;
+
+          .modal_top_content {
+            display: flex;
+            align-items: center;
+
+            .modal_image {
+              border-radius: 9999px;
+              height: 13.5rem;
+              width: 14rem;
+              margin-bottom: 1.5rem;
+              object-fit: cover;
+              margin-right: 2rem;
+            }
+
+            .modal_title {
+              font-size: 2.5rem;
+              font-weight: normal;
+            }
+          }
+
+          .modal_para {
+            font-size: 1.9rem;
+            color: $paragraph-color;
+            line-height: 2.75rem;
+          }
+        }
+      }
+
+      .show_modal_background {
+        display: block;
+      }
+
+      .show_modal {
+        display: flex;
       }
     }
 
