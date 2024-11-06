@@ -50,11 +50,12 @@ body main {
   flex-grow: 1;
 }
 body main .landing-page {
-  margin-top: 20rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: baseline;
   width: 100%;
+  height: 100dvh;
   max-width: 52rem;
   margin-left: auto;
   margin-right: auto;
@@ -80,6 +81,7 @@ body main .landing-page .landing-page_text .landing-page_text_button {
   color: white;
   font-size: 1.875rem;
   line-height: 2.25rem;
+  border: none;
 }
 body main .landing-page .landing-page_image {
   width: inherit;
@@ -268,7 +270,7 @@ body main .our-services .our_services_container .our-services_card-container .ou
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 30rem;
+  height: 34rem;
   background-color: black;
   border-radius: 1rem;
   padding-top: 2.5rem;
@@ -320,7 +322,6 @@ body main .finance_help {
 }
 body main .finance_help .finance_help_title {
   font-size: 3.75rem;
-  line-height: 1rem;
   margin-bottom: 4rem;
 }
 body main .finance_help .finance_help_para {
@@ -342,12 +343,53 @@ body main .finance_help .finance_help_button_container .finance_help_button {
   color: white;
   font-size: 1.875rem;
   line-height: 2.25rem;
+  border: none;
+}
+body main .new_client {
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  background-color: #2D2D2D;
+}
+body main .new_client .new_client_container {
+  width: 100%;
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+}
+body main .new_client .new_client_container .new_client_title {
+  font-size: 3.75rem;
+  margin-bottom: 4rem;
+  color: white;
+}
+body main .new_client .new_client_container .new_client_para {
+  font-size: 1.875rem;
+  line-height: 4rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+body main .new_client .new_client_container .new_client_button_container {
+  display: flex;
+  gap: 2rem;
+}
+body main .new_client .new_client_container .new_client_button_container .new_client_button {
+  border-radius: 0.5rem;
+  background-color: #008080;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1.75rem;
+  padding-left: 1.75rem;
+  color: white;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  border: none;
 }
 body main .cta {
   display: flex;
   flex-direction: column;
-  margin-top: 20rem;
-  background-color: #2D2D2D;
 }
 body main .cta .cta_container {
   display: flex;
@@ -362,7 +404,6 @@ body main .cta .cta_container {
 body main .cta .cta_container .cta_title {
   font-size: 3.75rem;
   margin-bottom: 4rem;
-  color: white;
   line-height: 5rem;
   text-align: center;
 }
@@ -375,30 +416,38 @@ body main .cta .cta_container .cta_button {
   padding-left: 1.75rem;
   color: white;
   font-size: 1.875rem;
+  border: none;
 }
 body .footer {
+  background-color: #2D2D2D;
+}
+body .footer .footer_content_container {
+  width: 85dvw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 85dvw;
   margin-right: auto;
   margin-left: auto;
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
-body .footer .footer_container .footer_logo {
+body .footer .footer_content_container .footer_container .footer_logo {
   margin-bottom: 1rem;
   font-size: 2.25rem;
+  color: white;
 }
-body .footer .footer_container .footer_facebook {
+body .footer .footer_content_container .footer_container .footer_facebook {
   height: 2.5rem;
   width: 2.5rem;
 }
-body .footer .footer_container_info .footer_street {
+body .footer .footer_content_container .footer_container_info {
+  color: white;
+}
+body .footer .footer_content_container .footer_container_info .footer_street {
   margin-bottom: 2rem;
   font-size: 1.25rem;
 }
-body .footer .footer_container_info .footer_number {
+body .footer .footer_content_container .footer_container_info .footer_number {
   margin-bottom: 0.25rem;
   font-size: 1.25rem;
 }

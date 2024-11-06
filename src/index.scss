@@ -64,11 +64,12 @@ body {
     flex-grow: 1;
 
     .landing-page {
-      margin-top: 20rem;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: baseline;
       width: 100%;
+      height: 100dvh;
       max-width: 52rem;
       margin-left: auto;
       margin-right: auto;
@@ -98,6 +99,7 @@ body {
           color: white;
           font-size: 1.875rem;
           line-height: 2.25rem;
+          border: none;
         }
       }
 
@@ -326,7 +328,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 30rem;
+            height: 34rem;
             background-color: black;
             border-radius: 1rem;
             padding-top: 2.5rem;
@@ -388,7 +390,6 @@ body {
 
       .finance_help_title {
         font-size: 3.75rem;
-        line-height: 1rem;
         margin-bottom: 4rem;
       }
 
@@ -412,6 +413,55 @@ body {
           color: white;
           font-size: 1.875rem;
           line-height: 2.25rem;
+          border: none;
+        }
+      }
+    }
+
+    .new_client {
+      margin-top: 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      background-color: $navigation-bg;
+
+      .new_client_container {
+        width: 100%;
+        max-width: 52rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20rem;
+        margin-bottom: 20rem;
+
+        .new_client_title {
+          font-size: 3.75rem;
+          margin-bottom: 4rem;
+          color: white;
+        }
+
+        .new_client_para {
+          font-size: 1.875rem;
+          line-height: 4rem;
+          margin-bottom: 1.5rem;
+          color: white;
+        }
+
+        .new_client_button_container {
+          display: flex;
+          gap: 2rem;
+
+          .new_client_button {
+            border-radius: 0.5rem;
+            background-color: $button-bg;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-right: 1.75rem;
+            padding-left: 1.75rem;
+            color: white;
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+            border: none;
+          }
         }
       }
     }
@@ -419,8 +469,6 @@ body {
     .cta {
       display: flex;
       flex-direction: column;
-      margin-top: 20rem;
-      background-color: $navigation-bg;
 
       .cta_container {
         display: flex;
@@ -435,7 +483,6 @@ body {
         .cta_title {
           font-size: 3.75rem;
           margin-bottom: 4rem;
-          color: white;
           line-height: 5rem;
           text-align: center;
         }
@@ -449,44 +496,51 @@ body {
           padding-left: 1.75rem;
           color: white;
           font-size: 1.875rem;
+          border: none;
         }
       }
     }
   }
 
   .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-width: 85dvw;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    background-color: $navigation-bg;
 
-    .footer_container {
+    .footer_content_container {
+      width: 85dvw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
 
-      .footer_logo {
-        margin-bottom: 1rem;
-        font-size: 2.25rem;
+      .footer_container {
+
+        .footer_logo {
+          margin-bottom: 1rem;
+          font-size: 2.25rem;
+          color: white;
+        }
+
+        .footer_facebook {
+          height: 2.5rem;
+          width: 2.5rem;
+        }
       }
 
-      .footer_facebook {
-        height: 2.5rem;
-        width: 2.5rem;
-      }
-    }
+      .footer_container_info {
+        color: white;
 
-    .footer_container_info {
+        .footer_street {
+          margin-bottom: 2rem;
+          font-size: 1.25rem;
+        }
 
-      .footer_street {
-        margin-bottom: 2rem;
-        font-size: 1.25rem;
-      }
-
-      .footer_number {
-        margin-bottom: 0.25rem;
-        font-size: 1.25rem;
+        .footer_number {
+          margin-bottom: 0.25rem;
+          font-size: 1.25rem;
+        }
       }
     }
   }
