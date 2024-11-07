@@ -16,35 +16,34 @@ body .navbar_mobile .navbar_item-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 56rem;
+  width: 90vw;
   margin-left: auto;
   margin-right: auto;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 body .navbar_mobile .navbar_item-container .navbar_logo {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   color: white;
 }
 body .navbar_mobile .navbar_item-container .navbar_hamburger-menu {
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
+  gap: 0.5rem;
 }
 body .navbar_mobile .navbar_item-container .navbar_hamburger-menu div {
   background-color: white;
-  width: 35px;
-  height: 3px;
-}
-@media (min-width: 1024px) {
-  body .navbar_mobile {
-    display: none;
-  }
+  width: 30px;
+  height: 2px;
 }
 body .navbar_laptop {
   display: none;
+}
+@media (min-width: 1024px) {
+  body .navbar_laptop {
+    display: block;
+  }
 }
 body main {
   flex-grow: 1;
@@ -54,33 +53,28 @@ body main .landing-page {
   flex-direction: column;
   justify-content: center;
   align-items: baseline;
-  width: 100%;
-  height: 100dvh;
-  max-width: 52rem;
+  width: 90vw;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 3rem;
 }
 body main .landing-page .landing-page_text .landing-page_text_title {
-  font-size: 6rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
 }
 body main .landing-page .landing-page_text .landing-page_text_para {
   margin-bottom: 2rem;
-  font-size: 2.25rem;
-  line-height: 3.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 body main .landing-page .landing-page_text .landing-page_text_button {
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   border-radius: 0.5rem;
   background-color: #008080;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
+  padding: 0.75rem 1rem;
   color: white;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 0.75rem;
   border: none;
 }
 body main .landing-page .landing-page_image {
@@ -450,6 +444,12 @@ body .footer .footer_content_container .footer_container_info .footer_street {
 body .footer .footer_content_container .footer_container_info .footer_number {
   margin-bottom: 0.25rem;
   font-size: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .navbar_mobile {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
