@@ -81,6 +81,17 @@ body main .landing-page .landing-page_image {
   width: inherit;
   border-radius: 1.5rem;
 }
+@media (min-width: 768px) {
+  body main .landing-page {
+    margin-top: 4rem;
+  }
+  body main .landing-page .landing-page_text .landing-page_text_title {
+    margin-bottom: 1.25rem;
+  }
+  body main .landing-page .landing-page_text .landing-page_text_para {
+    margin-bottom: 1rem;
+  }
+}
 body main .about-us {
   margin-top: 6rem;
   display: flex;
@@ -108,6 +119,11 @@ body main .about-us .about-us_container .about_us_container_info .about-us_para 
   line-height: 1.75rem;
   color: #333333;
 }
+@media (min-width: 768px) {
+  body main .about-us {
+    margin-top: 10rem;
+  }
+}
 body main .about-us_doctor {
   margin-top: 6rem;
   display: flex;
@@ -133,6 +149,11 @@ body main .about-us_doctor .about-us_doctor_container .about-us_doctor_content-c
   font-size: 1rem;
   line-height: 1.75rem;
   color: #333333;
+}
+@media (min-width: 768px) {
+  body main .about-us_doctor {
+    margin-top: 10rem;
+  }
 }
 body main .our-team {
   margin-top: 6rem;
@@ -232,6 +253,11 @@ body main .our-team .show_modal_background {
 body main .our-team .show_modal {
   display: flex;
 }
+@media (min-width: 768px) {
+  body main .our-team {
+    margin-top: 10rem;
+  }
+}
 body main .our-services {
   margin-top: 6rem;
   display: flex;
@@ -287,6 +313,11 @@ body main .our-services .our_services_container .our-services_card-container .ou
 body main .our-services .our_services_container .our-services_card-container .our-services_card .our_services_card_svg_container .our_services_card_svg_2 {
   height: 4rem;
 }
+@media (min-width: 768px) {
+  body main .our-services {
+    margin-top: 10rem;
+  }
+}
 body main .finance_help {
   margin-top: 6rem;
   display: flex;
@@ -321,6 +352,11 @@ body main .finance_help .finance_help_content_container .finance_help_button_con
   line-height: 2.25rem;
   border: none;
 }
+@media (min-width: 768px) {
+  body main .finance_help {
+    margin-top: 10rem;
+  }
+}
 body main .new_client {
   margin-top: 6rem;
   display: flex;
@@ -354,6 +390,11 @@ body main .new_client .new_client_container .new_client_button_container .new_cl
   color: white;
   font-size: 0.75rem;
   border: none;
+}
+@media (min-width: 768px) {
+  body main .new_client {
+    margin-top: 10rem;
+  }
 }
 body main .cta {
   display: flex;

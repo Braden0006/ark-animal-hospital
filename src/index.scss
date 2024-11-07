@@ -7,9 +7,9 @@ $title-size: 2rem;
 $para-size: 1rem;
 $button-size: 0.75rem;
 
-$breakpoint-desktop: 1440px;
-$breakpoint-laptop: 1024px;
-$breakpoint-tablet: 768px;
+$desktop: 1440px;
+$laptop: 1024px;
+$tablet: 768px;
 
 .stop_scrolling {
   height: 100%;
@@ -58,8 +58,7 @@ body {
   .navbar_laptop {
     display: none;
   }
-
-  @media (min-width: 1024px) {
+  @media (min-width: $laptop) {
     .navbar_laptop {
       display: block;
     }
@@ -109,6 +108,23 @@ body {
       }
     }
 
+    @media (min-width: $tablet) {
+      .landing-page {
+        margin-top: 4rem;
+
+        .landing-page_text {
+
+          .landing-page_text_title {
+            margin-bottom: 1.25rem;
+          }
+
+          .landing-page_text_para {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+
     .about-us {
       margin-top: 6rem;
       display: flex;
@@ -143,6 +159,11 @@ body {
         }
       }
     }
+    @media (min-width: $tablet) {
+      .about-us {
+        margin-top: 10rem;
+      }
+    }
 
     .about-us_doctor {
       margin-top: 6rem;
@@ -175,6 +196,11 @@ body {
             color: $paragraph-color;
           }
         }
+      }
+    }
+    @media (min-width: $tablet) {
+      .about-us_doctor {
+        margin-top: 10rem;
       }
     }
 
@@ -292,6 +318,11 @@ body {
         display: flex;
       }
     }
+    @media (min-width: $tablet) {
+      .our-team {
+        margin-top: 10rem;
+      }
+    }
 
     .our-services {
       margin-top: 6rem;
@@ -360,6 +391,11 @@ body {
         }
       }
     }
+    @media (min-width: $tablet) {
+      .our-services {
+        margin-top: 10rem;
+      }
+    }
 
     .finance_help {
       margin-top: 6rem;
@@ -400,6 +436,11 @@ body {
         }
       }
     }
+    @media (min-width: $tablet) {
+      .finance_help {
+        margin-top: 10rem;
+      }
+    }
 
     .new_client {
       margin-top: 6rem;
@@ -438,6 +479,11 @@ body {
             border: none;
           }
         }
+      }
+    }
+    @media (min-width: $tablet) {
+      .new_client {
+        margin-top: 10rem;
       }
     }
 
@@ -510,7 +556,7 @@ body {
   }
 }
 
-@media (min-width: $breakpoint-laptop) {
+@media (min-width: $laptop) {
   .navbar_mobile {
     display: none;
   }
