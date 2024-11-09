@@ -53,8 +53,7 @@ body .navbar_laptop {
   body .navbar_laptop .navbar_laptop_container {
     width: 95vw;
     display: flex;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding: 0.8rem 0;
     justify-content: space-between;
     align-items: center;
     margin-right: auto;
@@ -77,7 +76,7 @@ body .navbar_laptop {
     background-color: #008080;
     padding: 0.5rem 1rem;
     color: white;
-    font-size: 1rem;
+    font-size: 0.9rem;
     border: none;
   }
 }
@@ -148,7 +147,7 @@ body main .landing-page .landing-page_image {
     font-size: 1.25rem;
   }
   body main .landing-page .landing-page_text .landing-page_text_button {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   body main .landing-page .landing-page_image {
     width: 24rem;
@@ -433,6 +432,9 @@ body main .our-services .our_services_container .our-services_card-container .ou
   }
 }
 @media (min-width: 1024px) {
+  body main .our-services {
+    max-width: 55rem;
+  }
   body main .our-services .our_services_container .our-services_card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -490,6 +492,14 @@ body main .finance_help .finance_help_content_container .finance_help_button_con
     margin-top: 10rem;
   }
 }
+@media (min-width: 1024px) {
+  body main .finance_help {
+    max-width: 55rem;
+  }
+  body main .finance_help .finance_help_content_container .finance_help_button_container .finance_help_button {
+    font-size: 0.9rem;
+  }
+}
 body main .new_client {
   margin-top: 6rem;
   display: flex;
@@ -529,6 +539,14 @@ body main .new_client .new_client_container .new_client_button_container .new_cl
     margin-top: 10rem;
   }
 }
+@media (min-width: 1024px) {
+  body main .new_client .new_client_container {
+    max-width: 55rem;
+  }
+  body main .new_client .new_client_container .new_client_button_container .new_client_button {
+    font-size: 0.9rem;
+  }
+}
 body main .cta {
   display: flex;
   flex-direction: column;
@@ -552,6 +570,14 @@ body main .cta .cta_container .cta_button {
   color: white;
   font-size: 0.75rem;
   border: none;
+}
+@media (min-width: 1024px) {
+  body main .cta .cta_container {
+    max-width: 55rem;
+  }
+  body main .cta .cta_container .cta_button {
+    font-size: 0.9rem;
+  }
 }
 body .footer {
   background-color: #2D2D2D;
@@ -581,6 +607,11 @@ body .footer .footer_content_container .footer_container_info .footer_street {
 body .footer .footer_content_container .footer_container_info .footer_number {
   margin-bottom: 0.25rem;
   font-size: 0.75rem;
+}
+@media (min-width: 1024px) {
+  body .footer .footer_content_container {
+    max-width: 55rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

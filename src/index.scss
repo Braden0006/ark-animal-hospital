@@ -71,8 +71,7 @@ body {
       .navbar_laptop_container {
         width: 95vw;
         display: flex;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding: 0.8rem 0;
         justify-content: space-between;
         align-items: center;
         margin-right: auto;
@@ -98,7 +97,7 @@ body {
           background-color: $button-bg;
           padding: 0.5rem 1rem;
           color: white;
-          font-size: 1rem;
+          font-size: 0.9rem;
           border: none;
         }
       }
@@ -189,7 +188,7 @@ body {
           }
 
           .landing-page_text_button {
-            font-size: 1rem;
+            font-size: 0.9rem;
           }
         }
 
@@ -535,6 +534,7 @@ body {
     }
     @media (min-width: $laptop) {
       .our-services {
+        max-width: 55rem;
 
         .our_services_container {
 
@@ -606,6 +606,21 @@ body {
         margin-top: 10rem;
       }
     }
+    @media (min-width: $laptop) {
+      .finance_help {
+        max-width: 55rem;
+
+        .finance_help_content_container {
+
+          .finance_help_button_container {
+
+            .finance_help_button {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
 
     .new_client {
       margin-top: 6rem;
@@ -651,6 +666,21 @@ body {
         margin-top: 10rem;
       }
     }
+    @media (min-width: $laptop) {
+      .new_client {
+
+        .new_client_container {
+          max-width: 55rem;
+
+          .new_client_button_container {
+
+            .new_client_button {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
 
     .cta {
       display: flex;
@@ -676,6 +706,18 @@ body {
           color: white;
           font-size: $button-size;
           border: none;
+        }
+      }
+    }
+    @media (min-width: $laptop) {
+      .cta {
+
+        .cta_container {
+          max-width: 55rem;
+
+          .cta_button {
+            font-size: 0.9rem;
+          }
         }
       }
     }
@@ -716,6 +758,15 @@ body {
           margin-bottom: 0.25rem;
           font-size: 0.75rem;
         }
+      }
+    }
+  }
+
+  @media (min-width: $laptop) {
+    .footer {
+
+      .footer_content_container {
+        max-width: 55rem;
       }
     }
   }
