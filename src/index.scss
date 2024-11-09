@@ -790,10 +790,53 @@ body {
         }
       }
     }
+
+    .contact {
+      display: flex;
+      justify-content: center;
+      background-color: $navigation-bg;
+
+      .contact_container {
+        width: 85vw;
+        margin: 10rem 0;
+
+        .contact_title {
+          color: white;
+          margin-bottom: 3rem;
+        }
+
+        .contact_form {
+          display: flex;
+          flex-direction: column;
+          align-items: baseline;
+
+
+          .contact_label_title {
+            color: white;
+            margin-bottom: 0.5rem;
+          }
+
+          .contact_input {
+            margin-bottom: 1.5rem;
+            padding: 0.5rem 0.5rem;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            color: white;
+            width: 100%;
+          }
+
+          .contact_textarea {
+            margin-bottom: 1.5rem;
+            width: 100%;
+            height: 12rem;
+          }
+        }
+      }
+    }
   }
 
   .footer {
-    background-color: $navigation-bg;
 
     .footer_content_container {
       width: 90dvw;
@@ -807,7 +850,6 @@ body {
         .footer_logo {
           margin-bottom: 1rem;
           font-size: 1.5rem;
-          color: white;
         }
 
         .footer_facebook {
@@ -816,7 +858,6 @@ body {
       }
 
       .footer_container_info {
-        color: white;
 
         .footer_street {
           margin-bottom: 1.5rem;

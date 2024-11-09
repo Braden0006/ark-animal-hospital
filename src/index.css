@@ -637,8 +637,41 @@ body main .cta .cta_container .cta_button {
     font-size: 0.9rem;
   }
 }
-body .footer {
+body main .contact {
+  display: flex;
+  justify-content: center;
   background-color: #2D2D2D;
+}
+body main .contact .contact_container {
+  width: 85vw;
+  margin: 10rem 0;
+}
+body main .contact .contact_container .contact_title {
+  color: white;
+  margin-bottom: 3rem;
+}
+body main .contact .contact_container .contact_form {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+body main .contact .contact_container .contact_form .contact_label_title {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+body main .contact .contact_container .contact_form .contact_input {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  width: 100%;
+}
+body main .contact .contact_container .contact_form .contact_textarea {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: 12rem;
 }
 body .footer .footer_content_container {
   width: 90dvw;
@@ -650,13 +683,9 @@ body .footer .footer_content_container {
 body .footer .footer_content_container .footer_container .footer_logo {
   margin-bottom: 1rem;
   font-size: 1.5rem;
-  color: white;
 }
 body .footer .footer_content_container .footer_container .footer_facebook {
   height: 1.5rem;
-}
-body .footer .footer_content_container .footer_container_info {
-  color: white;
 }
 body .footer .footer_content_container .footer_container_info .footer_street {
   margin-bottom: 1.5rem;
