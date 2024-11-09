@@ -27,15 +27,73 @@ body .navbar_mobile .navbar_item-container .navbar_logo {
   color: white;
 }
 body .navbar_mobile .navbar_item-container .navbar_hamburger-menu {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  z-index: 10;
 }
-body .navbar_mobile .navbar_item-container .navbar_hamburger-menu div {
+body .navbar_mobile .navbar_item-container .navbar_hamburger-menu .navbar_hamburger {
   background-color: white;
   width: 24px;
   height: 2px;
   border-radius: 1rem;
+  position: absolute;
+  right: 0;
+  transition: 0.4s all ease-in-out;
+}
+body .navbar_mobile .navbar_item-container .navbar_hamburger-menu #bar-1 {
+  transform: translateY(8px);
+}
+body .navbar_mobile .navbar_item-container .navbar_hamburger-menu #bar-3 {
+  transform: translateY(-8px);
+}
+body .navbar_mobile .navbar_item-container .navbar_hamburger-menu .bar-1 {
+  transform: translateY(0px) !important;
+  rotate: 45deg;
+}
+body .navbar_mobile .navbar_item-container .navbar_hamburger-menu .bar-2 {
+  transform: translateX(-20px);
+  background: transparent;
+  box-shadow: none;
+}
+body .navbar_mobile .navbar_item-container .navbar_hamburger-menu .bar-3 {
+  transform: translateY(0px) !important;
+  rotate: -45deg;
+}
+body .navbar_mobile .navbar_mobile_dropdown_hidden {
+  position: fixed;
+  top: -100%;
+  height: 100%;
+  width: 100%;
+  background-color: #2D2D2D;
+  padding: 3rem 2rem;
+  transition: all 0.4s ease-in-out;
+}
+body .navbar_mobile .navbar_mobile_dropdown_hidden .navbar_mobile_dropdown_link {
+  opacity: 0;
+}
+body .navbar_mobile .navbar_mobile_dropdown_hidden .mobile_link {
+  color: white;
+  text-decoration: none;
+}
+body .navbar_mobile .navbar_mobile_dropdown_hidden .link-1 {
+  transition: all 2.4s;
+}
+body .navbar_mobile .navbar_mobile_dropdown_hidden .link-2 {
+  transition: all 2.8s;
+}
+body .navbar_mobile .navbar_mobile_dropdown_hidden .link-3 {
+  transition: all 3.2s;
+}
+body .navbar_mobile .navbar_mobile_dropdown_hidden .link-4 {
+  transition: all 3.6s;
+}
+body .navbar_mobile .navbar_mobile_dropdown_show {
+  top: 0;
+}
+body .navbar_mobile .navbar_mobile_dropdown_show .navbar_mobile_dropdown_link {
+  opacity: 1;
 }
 @media (min-width: 1024px) {
   body .navbar_mobile {

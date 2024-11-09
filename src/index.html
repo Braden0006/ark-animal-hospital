@@ -12,11 +12,18 @@
         <div class="navbar_item-container">
             <span class="navbar_logo">LOGO</span>
 
-            <div class="navbar_hamburger-menu">
-                <div class="bg-white w-35px h-3px"></div>
-                <div class="bg-white w-35px h-3px"></div>
-                <div class="bg-white w-35px h-3px"></div>
+            <div class="navbar_hamburger-menu" id="ham-menu">
+                <div class="navbar_hamburger" id="bar-1"></div>
+                <div class="navbar_hamburger" id="bar-2"></div>
+                <div class="navbar_hamburger" id="bar-3"></div>
             </div>
+        </div>
+
+        <div class="navbar_mobile_dropdown_hidden" id="dropdown-menu">
+            <h3 class="navbar_mobile_dropdown_link link-1" id="about-link"><a href="#about" class="mobile_link">About</a></h3>
+            <h3 class="navbar_mobile_dropdown_link link-2" id="services-link"><a href="#services" class="mobile_link">Services</a></h3>
+            <h3 class="navbar_mobile_dropdown_link link-3" id="finance-link"><a href="#finance" class="mobile_link">Finance Options</a></h3>
+            <h3 class="navbar_mobile_dropdown_link link-4" id="client-link"><a href="#new_client" class="mobile_link">New Client</a></h3>
         </div>
     </nav>
 
@@ -51,7 +58,7 @@
             <img src="images/dog.png" class="landing-page_image">
         </section>
 
-        <section class="about-us">
+        <section class="about-us" id="about">
             <div class="about-us_container">
                 <img src="images/dog.png" class="about-us_image">
                 <div class="about_us_container_info">
@@ -221,7 +228,7 @@
             </div>
         </section>
 
-        <section class="finance_help">
+        <section id="finance" class="finance_help">
             <div class="finance_help_content_container">
                 <h2 class="finance_help_title">Need help paying a bill?</h2>
                 <p class="finance_help_para">
@@ -236,7 +243,7 @@
             </div>
         </section>
 
-        <section class="new_client">
+        <section id="new_client" class="new_client">
             <div class="new_client_container">
                 <h2 class="new_client_title">Never been a client of ours before?</h2>
                 <p class="new_client_para">
