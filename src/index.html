@@ -270,9 +270,9 @@
             <div class="contact_container">
                 <h2 class="contact_title">Contact Us</h2>
 
-                <form class="contact_form">
+                <form class="contact_form" method="post" action="send-email.php">
                     <label for="name" class="contact_label_title">Name</label>
-                    <input class="contact_input" type="text" id="name" name="firstName" placeholder="Your name">
+                    <input class="contact_input" type="text" id="name" name="name" placeholder="Your name">
 
                     <label for="subject" class="contact_label_title">Subject</label>
                     <input class="contact_input" type="text" id="subject" name="subject" placeholder="Your subject">
@@ -284,7 +284,7 @@
                     <textarea class="contact_textarea" id="message" name="message" placeholder="Your message">
                 </textarea>
 
-                    <input type="submit" value="Submit">
+                    <button>Submit</button>
                 </form>
             </div>
         </section>
