@@ -533,6 +533,18 @@ body {
             max-width: 40rem;
           }
         }
+
+        .our_team_card_modal {
+
+          .our_team_card_modal_container {
+            width: 60%;
+
+            .modal_para {
+              font-size: 1rem;
+              line-height: 2rem;
+            }
+          }
+        }
       }
     }
 
