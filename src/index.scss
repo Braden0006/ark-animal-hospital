@@ -35,9 +35,9 @@ body {
       padding: 0.8rem 0;
 
       .navbar_logo {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: white;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 5rem;
       }
 
       .navbar_hamburger-menu {
@@ -147,8 +147,9 @@ body {
         margin-left: auto;
 
         .navbar_laptop_logo {
-          font-size: 2rem;
-          color: white;
+          height: 5rem;
+          width: 5rem;
+          border-radius: 5rem;
         }
 
         .navbar_laptop_link_container {
@@ -826,10 +827,25 @@ body {
             width: 100%;
           }
 
+          .contact_input:focus {
+            outline: none;
+          }
+
           .contact_textarea {
             margin-bottom: 1.5rem;
             width: 100%;
             height: 12rem;
+            padding: 1rem;
+          }
+
+          .contact_button {
+            margin-bottom: 4rem;
+            border-radius: 0.5rem;
+            background-color: $button-bg;
+            padding: 0.5rem 1rem;
+            color: white;
+            font-size: $button-size;
+            border: none;
           }
         }
       }

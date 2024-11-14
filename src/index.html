@@ -10,7 +10,21 @@
 <body id="body">
     <nav class="navbar_mobile">
         <div class="navbar_item-container">
-            <span class="navbar_logo">LOGO</span>
+            <picture>
+                <img
+                        sizes="(max-width: 1300px) 100vw, 1300px"
+                        srcset="
+                        ./images/Ark-Animal-Hospital-logo_pzdtag_c_scale,w_50.jpg 50w,
+                        ./images/Ark-Animal-Hospital-logo_pzdtag_c_scale,w_330.jpg 330w,
+                        ./images/Ark-Animal-Hospital-logo_pzdtag_c_scale,w_564.jpg 564w,
+                        ./images/Ark-Animal-Hospital-logo_pzdtag_c_scale,w_816.jpg 816w,
+                        ./images/Ark-Animal-Hospital-logo_pzdtag_c_scale,w_1042.jpg 1042w,
+                        ./images/Ark-Animal-Hospital-logo_pzdtag_c_scale,w_1162.jpg 1162w,
+                        ./images/Ark-Animal-Hospital-logo_pzdtag_c_scale,w_1300.jpg 1300w"
+                        src="./images/Ark-Animal-Hospital-logo_pzdtag_c_scale,w_1300.jpg"
+                        alt=""
+                        class="navbar_logo">
+            </picture>
 
             <div class="navbar_hamburger-menu" id="ham-menu">
                 <div class="navbar_hamburger" id="bar-1"></div>
@@ -29,7 +43,21 @@
 
     <nav class="navbar_laptop">
         <div class="navbar_laptop_container">
-            <span class="navbar_laptop_logo">LOGO</span>
+            <picture>
+                <img
+                        sizes="(max-width: 1300px) 100vw, 1300px"
+                        srcset="
+                        ./images/Ark-Animal-Hospital-logo_pzdtag_c_scale,w_50.jpg 50w,
+                        ./images/Ark-Animal-Hospital-logo_pzdtag_c_scale,w_330.jpg 330w,
+                        ./images/Ark-Animal-Hospital-logo_pzdtag_c_scale,w_564.jpg 564w,
+                        ./images/Ark-Animal-Hospital-logo_pzdtag_c_scale,w_816.jpg 816w,
+                        ./images/Ark-Animal-Hospital-logo_pzdtag_c_scale,w_1042.jpg 1042w,
+                        ./images/Ark-Animal-Hospital-logo_pzdtag_c_scale,w_1162.jpg 1162w,
+                        ./images/Ark-Animal-Hospital-logo_pzdtag_c_scale,w_1300.jpg 1300w"
+                        src="./images/Ark-Animal-Hospital-logo_pzdtag_c_scale,w_1300.jpg"
+                        alt=""
+                        class="navbar_laptop_logo">
+            </picture>
 
             <div class="navbar_laptop_link_container">
                 <h3 class="navbar_laptop_link">About</h3>
@@ -281,10 +309,10 @@
                     <input class="contact_input" type="text" id="email" name="email" placeholder="Your email">
 
                     <label for="message" class="contact_label_title">Message</label>
-                    <textarea class="contact_textarea" id="message" name="message" placeholder="Your message">
+                    <textarea class="contact_textarea" id="message" name="message">
                 </textarea>
 
-                    <button>Submit</button>
+                    <button class="contact_button">Submit</button>
                 </form>
             </div>
         </section>

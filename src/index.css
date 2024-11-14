@@ -22,9 +22,9 @@ body .navbar_mobile .navbar_item-container {
   padding: 0.8rem 0;
 }
 body .navbar_mobile .navbar_item-container .navbar_logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: white;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 5rem;
 }
 body .navbar_mobile .navbar_item-container .navbar_hamburger-menu {
   position: relative;
@@ -118,8 +118,9 @@ body .navbar_laptop {
     margin-left: auto;
   }
   body .navbar_laptop .navbar_laptop_container .navbar_laptop_logo {
-    font-size: 2rem;
-    color: white;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 5rem;
   }
   body .navbar_laptop .navbar_laptop_container .navbar_laptop_link_container {
     display: flex;
@@ -668,10 +669,23 @@ body main .contact .contact_container .contact_form .contact_input {
   color: white;
   width: 100%;
 }
+body main .contact .contact_container .contact_form .contact_input:focus {
+  outline: none;
+}
 body main .contact .contact_container .contact_form .contact_textarea {
   margin-bottom: 1.5rem;
   width: 100%;
   height: 12rem;
+  padding: 1rem;
+}
+body main .contact .contact_container .contact_form .contact_button {
+  margin-bottom: 4rem;
+  border-radius: 0.5rem;
+  background-color: #008080;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 0.75rem;
+  border: none;
 }
 body .footer .footer_content_container {
   width: 90dvw;
