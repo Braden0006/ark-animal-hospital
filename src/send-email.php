@@ -36,6 +36,6 @@ try {
     $mail->send();
 
     echo "Email sent.";
-} catch (Exception $e) {
+} catch (Exception) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
