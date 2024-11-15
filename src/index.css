@@ -130,14 +130,6 @@ body .navbar_laptop {
     font-size: 1rem;
     color: white;
   }
-  body .navbar_laptop .navbar_laptop_container .navbar_laptop_button {
-    border-radius: 0.5rem;
-    background-color: #008080;
-    padding: 0.5rem 1rem;
-    color: white;
-    font-size: 0.9rem;
-    border: none;
-  }
 }
 body main {
   flex-grow: 1;
