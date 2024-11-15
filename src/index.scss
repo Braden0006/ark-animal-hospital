@@ -268,6 +268,20 @@ body {
         }
       }
     }
+    @media (min-width: $desktop) {
+      .landing-page {
+        width: auto;
+        max-width: none;
+        gap: normal;
+
+        .landing-page_text {
+
+          .landing-page_text_para {
+            width: 70%;
+          }
+        }
+      }
+    }
 
     .about-us {
       margin-top: 6rem;
@@ -328,6 +342,18 @@ body {
         }
       }
     }
+    @media (min-width: $desktop) {
+      .about-us {
+        width: 100vw;
+        max-width: none;
+        justify-content: center;
+
+        .about-us_container {
+          width: 68rem;
+          gap: 8rem;
+        }
+      }
+    }
 
     .about-us_doctor {
       margin-top: 6rem;
@@ -385,18 +411,29 @@ body {
         }
       }
     }
+    @media (min-width: $desktop) {
+      .about-us_doctor {
+        width: 100vw;
+
+        .about-us_doctor_container {
+          width: 68rem;
+          max-width: none;
+          gap: 8rem;
+        }
+      }
+    }
 
     .our-team {
       margin-top: 6rem;
       display: flex;
       flex-direction: column;
-      align-items: baseline;
-      width: 85vw;
+      align-items: center;
+      width: 100vw;
       margin-left: auto;
       margin-right: auto;
 
       .our-team_container {
-        width: inherit;
+        width: 85vw;
 
         .our-team_title {
           font-size: $title-size;
@@ -547,16 +584,39 @@ body {
         }
       }
     }
+    @media (min-width: $desktop) {
+      .our-team {
+
+        .our-team_container {
+          width: 68rem;
+
+          .our-team_title {
+            max-width: none;
+          }
+
+          .our-team_card-container {
+            max-width: none;
+          }
+
+          .card_container-two {
+            max-width: none;
+            padding: 0 9.5rem;
+          }
+        }
+      }
+    }
 
     .our-services {
       margin-top: 6rem;
       display: flex;
       flex-direction: column;
-      width: 85vw;
+      align-items: center;
+      width: 100vw;
       margin-left: auto;
       margin-right: auto;
 
       .our_services_container {
+        width: 85vw;
 
         .our-services_title {
           font-size: $title-size;
@@ -643,18 +703,27 @@ body {
         }
       }
     }
+    @media (min-width: $desktop) {
+      .our-services {
+
+        .our_services_container {
+          width: 68rem;
+        }
+      }
+    }
 
     .finance_help {
       margin-top: 6rem;
       display: flex;
       flex-direction: column;
-      align-items: baseline;
-      width: 85vw;
+      align-items: center;
+      width: 100vw;
       margin-left: auto;
       margin-right: auto;
 
       .finance_help_content_container {
-        margin: 6rem auto;
+        margin: 6rem 0;
+        width: 85vw;
 
         .finance_help_title {
           font-size: $title-size;
@@ -690,7 +759,6 @@ body {
     }
     @media (min-width: $laptop) {
       .finance_help {
-        max-width: 55rem;
 
         .finance_help_content_container {
 
@@ -703,17 +771,25 @@ body {
         }
       }
     }
+    @media (min-width: $desktop) {
+      .finance_help {
+
+        .finance_help_content_container {
+          width: 68rem;
+        }
+      }
+    }
 
     .new_client {
       margin-top: 6rem;
       display: flex;
       flex-direction: column;
-      align-items: baseline;
+      align-items: center;
       background-color: $navigation-bg;
 
       .new_client_container {
         width: 85vw;
-        margin: 10rem auto;
+        margin: 10rem 0;
 
         .new_client_title {
           font-size: $title-size;
@@ -752,7 +828,6 @@ body {
       .new_client {
 
         .new_client_container {
-          max-width: 55rem;
 
           .new_client_button_container {
 
@@ -763,17 +838,26 @@ body {
         }
       }
     }
+    @media (min-width: $desktop) {
+      .new_client {
+
+        .new_client_container {
+          width: 68rem;
+        }
+      }
+    }
 
     .cta {
       display: flex;
       flex-direction: column;
+      align-items: center;
 
       .cta_container {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 85vw;
-        margin: 10rem auto;
+        margin: 10rem 0;
 
         .cta_title {
           font-size: $title-size;
@@ -795,11 +879,18 @@ body {
       .cta {
 
         .cta_container {
-          max-width: 55rem;
 
           .cta_button {
             font-size: 0.9rem;
           }
+        }
+      }
+    }
+    @media (min-width: $desktop) {
+      .cta {
+
+        .cta_container {
+          width: 68rem;
         }
       }
     }
@@ -862,6 +953,14 @@ body {
         }
       }
     }
+    @media (min-width: $desktop) {
+      .contact {
+
+        .contact_container {
+          width: 68rem;
+        }
+      }
+    }
   }
 
   .footer {
@@ -896,15 +995,6 @@ body {
           margin-bottom: 0.25rem;
           font-size: 0.75rem;
         }
-      }
-    }
-  }
-
-  @media (min-width: $laptop) {
-    .footer {
-
-      .footer_content_container {
-        max-width: 55rem;
       }
     }
   }

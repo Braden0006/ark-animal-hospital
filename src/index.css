@@ -213,6 +213,16 @@ body main .landing-page .landing-page_image {
     height: 22rem;
   }
 }
+@media (min-width: 1440px) {
+  body main .landing-page {
+    width: auto;
+    max-width: none;
+    gap: normal;
+  }
+  body main .landing-page .landing-page_text .landing-page_text_para {
+    width: 70%;
+  }
+}
 body main .about-us {
   margin-top: 6rem;
   display: flex;
@@ -262,6 +272,17 @@ body main .about-us .about-us_container .about_us_container_info .about-us_para 
     height: 22rem;
   }
 }
+@media (min-width: 1440px) {
+  body main .about-us {
+    width: 100vw;
+    max-width: none;
+    justify-content: center;
+  }
+  body main .about-us .about-us_container {
+    width: 68rem;
+    gap: 8rem;
+  }
+}
 body main .about-us_doctor {
   margin-top: 6rem;
   display: flex;
@@ -309,17 +330,27 @@ body main .about-us_doctor .about-us_doctor_container .about-us_doctor_content-c
     height: 22rem;
   }
 }
+@media (min-width: 1440px) {
+  body main .about-us_doctor {
+    width: 100vw;
+  }
+  body main .about-us_doctor .about-us_doctor_container {
+    width: 68rem;
+    max-width: none;
+    gap: 8rem;
+  }
+}
 body main .our-team {
   margin-top: 6rem;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  width: 85vw;
+  align-items: center;
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
 }
 body main .our-team .our-team_container {
-  width: inherit;
+  width: 85vw;
 }
 body main .our-team .our-team_container .our-team_title {
   font-size: 2rem;
@@ -442,13 +473,32 @@ body main .our-team .show_modal {
     line-height: 2rem;
   }
 }
+@media (min-width: 1440px) {
+  body main .our-team .our-team_container {
+    width: 68rem;
+  }
+  body main .our-team .our-team_container .our-team_title {
+    max-width: none;
+  }
+  body main .our-team .our-team_container .our-team_card-container {
+    max-width: none;
+  }
+  body main .our-team .our-team_container .card_container-two {
+    max-width: none;
+    padding: 0 9.5rem;
+  }
+}
 body main .our-services {
   margin-top: 6rem;
   display: flex;
   flex-direction: column;
-  width: 85vw;
+  align-items: center;
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
+}
+body main .our-services .our_services_container {
+  width: 85vw;
 }
 body main .our-services .our_services_container .our-services_title {
   font-size: 2rem;
@@ -519,17 +569,23 @@ body main .our-services .our_services_container .our-services_card-container .ou
     margin-bottom: 0;
   }
 }
+@media (min-width: 1440px) {
+  body main .our-services .our_services_container {
+    width: 68rem;
+  }
+}
 body main .finance_help {
   margin-top: 6rem;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  width: 85vw;
+  align-items: center;
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
 }
 body main .finance_help .finance_help_content_container {
-  margin: 6rem auto;
+  margin: 6rem 0;
+  width: 85vw;
 }
 body main .finance_help .finance_help_content_container .finance_help_title {
   font-size: 2rem;
@@ -559,23 +615,25 @@ body main .finance_help .finance_help_content_container .finance_help_button_con
   }
 }
 @media (min-width: 1024px) {
-  body main .finance_help {
-    max-width: 55rem;
-  }
   body main .finance_help .finance_help_content_container .finance_help_button_container .finance_help_button {
     font-size: 0.9rem;
+  }
+}
+@media (min-width: 1440px) {
+  body main .finance_help .finance_help_content_container {
+    width: 68rem;
   }
 }
 body main .new_client {
   margin-top: 6rem;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
   background-color: #2D2D2D;
 }
 body main .new_client .new_client_container {
   width: 85vw;
-  margin: 10rem auto;
+  margin: 10rem 0;
 }
 body main .new_client .new_client_container .new_client_title {
   font-size: 2rem;
@@ -606,23 +664,26 @@ body main .new_client .new_client_container .new_client_button_container .new_cl
   }
 }
 @media (min-width: 1024px) {
-  body main .new_client .new_client_container {
-    max-width: 55rem;
-  }
   body main .new_client .new_client_container .new_client_button_container .new_client_button {
     font-size: 0.9rem;
+  }
+}
+@media (min-width: 1440px) {
+  body main .new_client .new_client_container {
+    width: 68rem;
   }
 }
 body main .cta {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 body main .cta .cta_container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 85vw;
-  margin: 10rem auto;
+  margin: 10rem 0;
 }
 body main .cta .cta_container .cta_title {
   font-size: 2rem;
@@ -638,11 +699,13 @@ body main .cta .cta_container .cta_button {
   border: none;
 }
 @media (min-width: 1024px) {
-  body main .cta .cta_container {
-    max-width: 55rem;
-  }
   body main .cta .cta_container .cta_button {
     font-size: 0.9rem;
+  }
+}
+@media (min-width: 1440px) {
+  body main .cta .cta_container {
+    width: 68rem;
   }
 }
 body main .contact {
@@ -694,6 +757,11 @@ body main .contact .contact_container .contact_form .contact_button {
   font-size: 0.75rem;
   border: none;
 }
+@media (min-width: 1440px) {
+  body main .contact .contact_container {
+    width: 68rem;
+  }
+}
 body .footer .footer_content_container {
   width: 90dvw;
   display: flex;
@@ -715,11 +783,6 @@ body .footer .footer_content_container .footer_container_info .footer_street {
 body .footer .footer_content_container .footer_container_info .footer_number {
   margin-bottom: 0.25rem;
   font-size: 0.75rem;
-}
-@media (min-width: 1024px) {
-  body .footer .footer_content_container {
-    max-width: 55rem;
-  }
 }
 
 /*# sourceMappingURL=index.css.map */
