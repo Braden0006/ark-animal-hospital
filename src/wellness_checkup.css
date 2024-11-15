@@ -1,0 +1,63 @@
+body .service_main {
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  background-image: url("images/dog_on_xray_table.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .service_main .background_opacity {
+  position: fixed;
+  height: inherit;
+  width: inherit;
+  background-color: black;
+  opacity: 70%;
+}
+body .service_main .service_container {
+  width: 85vw;
+  z-index: 1;
+  padding: 1rem 0;
+}
+body .service_main .service_container .service_svg {
+  height: 4rem;
+  width: 4rem;
+}
+body .service_main .service_container .service_title {
+  color: white;
+}
+body .service_main .service_container .service_para {
+  line-height: 1.6rem;
+  color: white;
+  font-weight: 300;
+}
+body .service_main .service_container .service_list {
+  margin: 2rem 0;
+  line-height: 1.6rem;
+  color: white;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  body .service_main .service_container {
+    padding: 3rem 0;
+  }
+}
+@media (min-width: 1024px) {
+  body .service_main .service_container {
+    padding: 4rem 0;
+  }
+  body .service_main .service_container .service_para {
+    font-size: 1.1rem;
+  }
+  body .service_main .service_container .service_list {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1440px) {
+  body .service_main .service_container {
+    width: 68rem;
+  }
+}
+
+/*# sourceMappingURL=wellness_checkup.css.map */
