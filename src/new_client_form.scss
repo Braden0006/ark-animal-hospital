@@ -1,0 +1,23 @@
+body {
+
+  .new_client {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    .new_client_container {
+      width: 85vw;
+
+      .new_client_form_container {
+
+        .new_client_form {
+
+          .new_client_input_group {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
