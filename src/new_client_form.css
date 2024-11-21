@@ -6,9 +6,33 @@ body .new_client {
 body .new_client .new_client_container {
   width: 85vw;
 }
+body .new_client .new_client_container .new_client_heading_text {
+  margin: 2.5rem 0;
+}
+body .new_client .new_client_container .new_client_heading_text .new_client_heading {
+  font-size: 2rem;
+  text-align: center;
+}
 body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_input_group {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_input_group .new_client_input {
+  display: flex;
+  flex-direction: column;
+}
+body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_input_group .new_client_input .new_client_label {
+  margin-bottom: 0.25rem;
+}
+body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_input_group .new_client_pet {
+  display: flex;
+  gap: 1rem;
+}
+body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_input_group .new_client_pet .new_client_pet_input {
+  display: flex;
+  gap: 0.25rem;
 }
 
 /*# sourceMappingURL=new_client_form.css.map */

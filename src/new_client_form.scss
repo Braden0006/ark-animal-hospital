@@ -8,6 +8,15 @@ body {
     .new_client_container {
       width: 85vw;
 
+      .new_client_heading_text {
+        margin: 2.5rem 0;
+
+        .new_client_heading {
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+
       .new_client_form_container {
 
         .new_client_form {
@@ -15,6 +24,27 @@ body {
           .new_client_input_group {
             display: flex;
             flex-direction: column;
+            margin-bottom: 2rem;
+            gap: 1rem;
+
+            .new_client_input {
+              display: flex;
+              flex-direction: column;
+
+              .new_client_label {
+                margin-bottom: 0.25rem;
+              }
+            }
+
+            .new_client_pet {
+              display: flex;
+              gap: 1rem;
+
+              .new_client_pet_input {
+                display: flex;
+                gap: 0.25rem;
+              }
+            }
           }
         }
       }
