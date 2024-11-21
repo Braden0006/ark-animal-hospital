@@ -178,34 +178,41 @@ body {
       margin-left: auto;
       margin-right: auto;
 
-      .landing-page_text {
-
-        .landing-page_text_title {
-          font-size: $title-size;
-          font-weight: 700;
-          margin-bottom: 1.5rem;
-        }
-
-        .landing-page_text_para {
-          margin-bottom: 2rem;
-          font-size: $para-size;
-          line-height: 1.5rem;
-        }
-
-        .landing-page_text_button {
-          margin-bottom: 4rem;
-          border-radius: 0.5rem;
-          background-color: $button-bg;
-          padding: 0.75rem 1rem;
-          color: white;
-          font-size: $button-size;
-          border: none;
-        }
-      }
-
-      .landing-page_image {
+      .landing-page_container {
         width: inherit;
-        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+
+        .landing-page_text {
+
+          .landing-page_text_title {
+            font-size: $title-size;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            margin-top: 0;
+          }
+
+          .landing-page_text_para {
+            margin-bottom: 2rem;
+            font-size: $para-size;
+            line-height: 1.5rem;
+          }
+
+          .landing-page_text_button {
+            margin-bottom: 4rem;
+            border-radius: 0.5rem;
+            background-color: $button-bg;
+            padding: 0.75rem 1rem;
+            color: white;
+            font-size: $button-size;
+            border: none;
+          }
+        }
+
+        .landing-page_image {
+          width: inherit;
+          border-radius: 1.5rem;
+        }
       }
     }
     @media (min-width: $tablet) {
@@ -224,7 +231,6 @@ body {
         }
       }
     }
-
     @media (min-width: $laptop) {
       .landing-page {
         flex-direction: row;
@@ -235,27 +241,32 @@ body {
         padding-top: 10rem;
         gap: 4rem;
 
-        .landing-page_text {
+        .landing-page_container {
+          flex-direction: row;
+          gap: 4rem;
 
-          .landing-page_text_title {
-            margin-bottom: 1.5rem;
-            font-size: 3rem;
+          .landing-page_text {
+
+            .landing-page_text_title {
+              margin-bottom: 1.5rem;
+              font-size: 3rem;
+            }
+
+            .landing-page_text_para {
+              color: $paragraph-color;
+              line-height: 1.6rem;
+              font-size: 1.25rem;
+            }
+
+            .landing-page_text_button {
+              font-size: 0.9rem;
+            }
           }
 
-          .landing-page_text_para {
-            color: $paragraph-color;
-            line-height: 1.6rem;
-            font-size: 1.25rem;
+          .landing-page_image {
+            width: 24rem;
+            height: 22rem;
           }
-
-          .landing-page_text_button {
-            font-size: 0.9rem;
-          }
-        }
-
-        .landing-page_image {
-          width: 24rem;
-          height: 22rem;
         }
       }
     }
@@ -265,10 +276,15 @@ body {
         max-width: none;
         gap: normal;
 
-        .landing-page_text {
+        .landing-page_container {
+          width: 68rem;
+          gap: 0;
 
-          .landing-page_text_para {
-            width: 70%;
+          .landing-page_text {
+
+            .landing-page_text_para {
+              width: 70%;
+            }
           }
         }
       }

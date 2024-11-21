@@ -144,17 +144,23 @@ body main .landing-page {
   margin-left: auto;
   margin-right: auto;
 }
-body main .landing-page .landing-page_text .landing-page_text_title {
+body main .landing-page .landing-page_container {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+body main .landing-page .landing-page_container .landing-page_text .landing-page_text_title {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+  margin-top: 0;
 }
-body main .landing-page .landing-page_text .landing-page_text_para {
+body main .landing-page .landing-page_container .landing-page_text .landing-page_text_para {
   margin-bottom: 2rem;
   font-size: 1rem;
   line-height: 1.5rem;
 }
-body main .landing-page .landing-page_text .landing-page_text_button {
+body main .landing-page .landing-page_container .landing-page_text .landing-page_text_button {
   margin-bottom: 4rem;
   border-radius: 0.5rem;
   background-color: #008080;
@@ -163,7 +169,7 @@ body main .landing-page .landing-page_text .landing-page_text_button {
   font-size: 0.75rem;
   border: none;
 }
-body main .landing-page .landing-page_image {
+body main .landing-page .landing-page_container .landing-page_image {
   width: inherit;
   border-radius: 1.5rem;
 }
@@ -188,19 +194,23 @@ body main .landing-page .landing-page_image {
     padding-top: 10rem;
     gap: 4rem;
   }
-  body main .landing-page .landing-page_text .landing-page_text_title {
+  body main .landing-page .landing-page_container {
+    flex-direction: row;
+    gap: 4rem;
+  }
+  body main .landing-page .landing-page_container .landing-page_text .landing-page_text_title {
     margin-bottom: 1.5rem;
     font-size: 3rem;
   }
-  body main .landing-page .landing-page_text .landing-page_text_para {
+  body main .landing-page .landing-page_container .landing-page_text .landing-page_text_para {
     color: #333333;
     line-height: 1.6rem;
     font-size: 1.25rem;
   }
-  body main .landing-page .landing-page_text .landing-page_text_button {
+  body main .landing-page .landing-page_container .landing-page_text .landing-page_text_button {
     font-size: 0.9rem;
   }
-  body main .landing-page .landing-page_image {
+  body main .landing-page .landing-page_container .landing-page_image {
     width: 24rem;
     height: 22rem;
   }
@@ -211,7 +221,11 @@ body main .landing-page .landing-page_image {
     max-width: none;
     gap: normal;
   }
-  body main .landing-page .landing-page_text .landing-page_text_para {
+  body main .landing-page .landing-page_container {
+    width: 68rem;
+    gap: 0;
+  }
+  body main .landing-page .landing-page_container .landing-page_text .landing-page_text_para {
     width: 70%;
   }
 }
