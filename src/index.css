@@ -664,6 +664,7 @@ body main .new_client .new_client_container .new_client_button_container .new_cl
   color: white;
   font-size: 0.75rem;
   border: none;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   body main .new_client {
