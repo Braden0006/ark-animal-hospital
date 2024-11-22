@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="contact_us.css">
+</head>
+<body>
+<main class="contact_main">
+    <section class="contact">
+        <div class="google_map_container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11708.156567105296!2d-106.3807506!3d42.8086589!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8760a4efde9b9ee1%3A0x5c643097cdb7da3a!2sArk%20Animal%20Hospital!5e0!3m2!1sen!2sus!4v1732300395834!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="contact_container">
+            <h2 class="contact_title">Contact Us</h2>
+
+            <form class="contact_form" method="post" action="send-email.php">
+                <label for="name" class="contact_label_title">Name</label>
+                <input class="contact_input" type="text" id="name" name="name" placeholder="Your name">
+
+                <label for="subject" class="contact_label_title">Subject</label>
+                <input class="contact_input" type="text" id="subject" name="subject" placeholder="Your subject">
+
+                <label for="email" class="contact_label_title">Email</label>
+                <input class="contact_input" type="text" id="email" name="email" placeholder="Your email">
+
+                <label for="message" class="contact_label_title">Message</label>
+                <textarea class="contact_textarea" id="message" name="message">
+                </textarea>
+
+                <button class="contact_button">Submit</button>
+            </form>
+        </div>
+    </section>
+</main>
+</body>
+</html>

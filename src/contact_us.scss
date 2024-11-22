@@ -1,0 +1,110 @@
+$navigation-bg: #2D2D2D;
+$button-bg: #008080;
+$button-size: 0.75rem;
+
+$laptop: 1024px;
+$desktop: 1440px;
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+
+    .google_map_container {
+      width: inherit;
+      iframe {
+        width: inherit;
+      }
+    }
+
+    .contact_container {
+      margin: 4rem 0;
+      background-color: #dee0e3;
+      padding: 0 1rem;
+
+      .contact_title {
+        margin-bottom: 3rem;
+      }
+
+      .contact_form {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+
+
+        .contact_label_title {
+          margin-bottom: 0.5rem;
+        }
+
+        .contact_input {
+          margin-bottom: 1.5rem;
+          padding: 0.5rem 0.5rem;
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid white;
+          width: 100%;
+        }
+
+        .contact_input:focus {
+          outline: none;
+        }
+
+        .contact_textarea {
+          margin-bottom: 0.75rem;
+          width: 100%;
+          height: 12rem;
+          padding: 1rem;
+        }
+
+        .contact_button {
+          margin-bottom: 2rem;
+          border-radius: 0.25rem;
+          background-color: $button-bg;
+          padding: 0.5rem 1rem;
+          font-size: $button-size;
+          border: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
+@media (min-width: $laptop) {
+  main {
+    height: 100dvh;
+    margin: 0;
+    justify-content: center;
+
+    .contact {
+      flex-direction: row-reverse;
+
+      .google_map_container {
+        width: 40%;
+
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .contact_container {
+        width: 60%;
+        margin: 0;
+      }
+    }
+  }
+}
+@media (min-width: $desktop) {
+  main {
+
+    .contact {
+      width: 80vw;
+    }
+  }
+}
