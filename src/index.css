@@ -375,7 +375,7 @@ body main .our-team .our-team_container .our-team_card-container .our-team_card 
 }
 body main .our-team .our-team_container .our-team_card-container .our-team_card .our-team_card-image {
   border-radius: 9999px;
-  height: 8.5rem;
+  height: 9rem;
   width: 9rem;
   object-fit: cover;
 }
