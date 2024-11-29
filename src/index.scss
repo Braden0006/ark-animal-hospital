@@ -1,4 +1,4 @@
-$background-color: #F0F8FF;
+$background-color: #F8F8F8;
 $navigation-bg: #2D2D2D;
 $button-bg: #008080;
 $paragraph-color: #333333;
@@ -153,6 +153,10 @@ body {
         }
 
         .navbar_laptop_link_container {
+          a {
+            text-decoration: none;
+          }
+
           display: flex;
           gap: 2rem;
 

@@ -1,22 +1,39 @@
+body {
+  background-color: #F8F8F8;
+}
 body .new_client {
   width: 100vw;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .new_client .new_client_svg_container {
+  width: 85vw;
+  margin-top: 1rem;
+}
+body .new_client .new_client_svg_container .back_button_svg {
+  height: 4rem;
+  width: 4rem;
+  margin-left: -12px;
 }
 body .new_client .new_client_container {
   width: 85vw;
 }
 body .new_client .new_client_container .new_client_heading_text {
-  margin: 2.5rem 0;
+  margin-top: 1rem;
 }
 body .new_client .new_client_container .new_client_heading_text .new_client_heading {
   font-size: 2rem;
   text-align: center;
+  margin: 0;
+}
+body .new_client .new_client_container .new_client_form_container {
+  margin: 2rem 0;
 }
 body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_input_group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   gap: 1rem;
 }
 body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_input_group .new_client_input {
@@ -26,13 +43,33 @@ body .new_client .new_client_container .new_client_form_container .new_client_fo
 body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_input_group .new_client_input .new_client_label {
   margin-bottom: 0.25rem;
 }
-body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_input_group .new_client_pet {
+body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_input_group .new_client_radio_container {
   display: flex;
   gap: 1rem;
 }
-body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_input_group .new_client_pet .new_client_pet_input {
+body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_input_group .new_client_radio_container .new_client_input_radio {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.25rem;
+}
+body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_pet {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_pet .new_client_pet_input {
   display: flex;
   gap: 0.25rem;
+  flex-direction: row-reverse;
+}
+@media (min-width: 1024px) {
+  body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_input_group {
+    flex-direction: row;
+  }
+  body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_input_group .new_client_radio_container .new_client_input_radio {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=new_client_form.css.map */

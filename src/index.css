@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #F0F8FF;
+  background-color: #F8F8F8;
 }
 body .navbar_mobile {
   background-color: #2D2D2D;
@@ -125,6 +125,9 @@ body .navbar_laptop {
   body .navbar_laptop .navbar_laptop_container .navbar_laptop_link_container {
     display: flex;
     gap: 2rem;
+  }
+  body .navbar_laptop .navbar_laptop_container .navbar_laptop_link_container a {
+    text-decoration: none;
   }
   body .navbar_laptop .navbar_laptop_container .navbar_laptop_link_container .navbar_laptop_link {
     font-size: 1rem;
