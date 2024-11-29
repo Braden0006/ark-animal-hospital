@@ -13,7 +13,7 @@ body .service_main .background_opacity {
   height: inherit;
   width: inherit;
   background-color: black;
-  opacity: 75%;
+  opacity: 80%;
 }
 body .service_main .service_container {
   width: 85vw;
@@ -29,7 +29,7 @@ body .service_main .service_container .service_title {
   color: white;
 }
 body .service_main .service_container .service_para {
-  line-height: 1.6rem;
+  line-height: 1.9rem;
   color: white;
   font-weight: 300;
 }
@@ -40,6 +40,9 @@ body .service_main .service_container .service_list {
   font-weight: 300;
 }
 @media (min-width: 768px) {
+  body .service_main {
+    height: 100dvh;
+  }
   body .service_main .service_container {
     padding: 3rem 0;
   }

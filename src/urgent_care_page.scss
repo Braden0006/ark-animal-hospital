@@ -15,7 +15,7 @@ body {
       height: inherit;
       width: inherit;
       background-color: black;
-      opacity: 75%;
+      opacity: 80%;
     }
 
     .service_container {
@@ -34,7 +34,7 @@ body {
       }
 
       .service_para {
-        line-height: 1.6rem;
+        line-height: 1.9rem;
         color: white;
         font-weight: 300;
       }
@@ -49,6 +49,7 @@ body {
   }
   @media (min-width: 768px) {
     .service_main {
+      height: 100dvh;
 
       .service_container {
         padding: 3rem 0;
