@@ -318,6 +318,19 @@ body main .about-us_doctor .about-us_doctor_container .about-us_doctor_content-c
   line-height: 1.75rem;
   color: #333333;
 }
+body main .about-us_doctor .about-us_doctor_container .about-us_doctor_content-container .about_us_doctor_button {
+  margin-bottom: 4rem;
+  border-radius: 0.5rem;
+  background-color: #008080;
+  padding: 0.75rem 1rem;
+  color: white;
+  font-size: 0.75rem;
+  border: none;
+}
+body main .about-us_doctor .about-us_doctor_container .about-us_doctor_content-container .about_us_doctor_button a {
+  text-decoration: none;
+  color: white;
+}
 @media (min-width: 768px) {
   body main .about-us_doctor {
     margin-top: 10rem;
