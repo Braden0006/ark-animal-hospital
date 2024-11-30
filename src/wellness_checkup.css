@@ -1,6 +1,6 @@
 body .service_main {
   width: 100vw;
-  height: 100%;
+  height: 100dvh;
   display: flex;
   justify-content: center;
   background-image: url("images/dog_on_xray_table.jpg");
@@ -29,22 +29,29 @@ body .service_main .service_container .service_title {
   color: white;
 }
 body .service_main .service_container .service_para {
-  line-height: 1.9rem;
+  line-height: 2rem;
   color: white;
   font-weight: 300;
+  font-size: 1.1rem;
 }
 body .service_main .service_container .service_list {
   margin: 2rem 0;
-  line-height: 1.6rem;
+  line-height: 1.8rem;
   color: white;
   font-weight: 300;
 }
 @media (min-width: 768px) {
-  body .service_main {
-    height: 100dvh;
-  }
   body .service_main .service_container {
     padding: 3rem 0;
+  }
+  body .service_main .service_container .service_title {
+    font-size: 2.25rem;
+  }
+  body .service_main .service_container .service_para {
+    font-size: 1.25rem;
+  }
+  body .service_main .service_container .service_list {
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 1024px) {
