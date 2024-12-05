@@ -70,14 +70,14 @@ body .navbar_mobile .navbar_mobile_dropdown_hidden {
   height: 100%;
   width: 100%;
   background-color: #2D2D2D;
-  padding: 3rem 2rem;
+  padding: 6rem 2rem;
   transition: all 0.4s ease-in-out;
 }
 body .navbar_mobile .navbar_mobile_dropdown_hidden .navbar_mobile_dropdown_link {
   opacity: 0;
 }
 body .navbar_mobile .navbar_mobile_dropdown_hidden .mobile_link {
-  color: white;
+  color: #F8F8F8;
   text-decoration: none;
 }
 body .navbar_mobile .navbar_mobile_dropdown_hidden .link-1 {
@@ -141,7 +141,7 @@ body main {
   flex-grow: 1;
 }
 body main .landing-page {
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,9 +181,6 @@ body main .landing-page .landing-page_container .landing-page_image {
   border-radius: 1.5rem;
 }
 @media (min-width: 768px) {
-  body main .landing-page {
-    margin-top: 4rem;
-  }
   body main .landing-page .landing-page_text .landing-page_text_title {
     margin-bottom: 1.25rem;
   }
@@ -549,13 +546,13 @@ body main .our-services .our_services_container .our-services_card-container .ou
   padding: 2.5rem 2.5rem 1.5rem 2.5rem;
 }
 body main .our-services .our_services_container .our-services_card-container .our-services_card .our-services_card_title {
-  color: white;
+  color: #F8F8F8;
   font-size: 1.5rem;
   margin-bottom: 1rem;
   margin-top: 0;
 }
 body main .our-services .our_services_container .our-services_card-container .our-services_card .our-services_card_para {
-  color: white;
+  color: #F8F8F8;
   font-size: 0.8rem;
   line-height: 1.75rem;
   margin-bottom: 2rem;
@@ -668,13 +665,13 @@ body main .new_client .new_client_container {
 body main .new_client .new_client_container .new_client_title {
   font-size: 2rem;
   margin-bottom: 2.5rem;
-  color: white;
+  color: #F8F8F8;
 }
 body main .new_client .new_client_container .new_client_para {
   font-size: 1rem;
   line-height: 1.75rem;
   margin-bottom: 1.5rem;
-  color: white;
+  color: #F8F8F8;
 }
 body main .new_client .new_client_container .new_client_button_container {
   display: flex;
@@ -738,6 +735,9 @@ body main .cta .cta_container .cta_button {
     width: 68rem;
   }
 }
+body .footer {
+  background-color: #2D2D2D;
+}
 body .footer .footer_content_container {
   width: 90dvw;
   display: flex;
@@ -757,6 +757,9 @@ body .footer .footer_content_container .footer_container .footer_logo {
 }
 body .footer .footer_content_container .footer_container .footer_facebook {
   height: 1.5rem;
+}
+body .footer .footer_content_container .footer_container_info {
+  color: #F8F8F8;
 }
 body .footer .footer_content_container .footer_container_info .footer_street {
   margin-bottom: 1.5rem;

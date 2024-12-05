@@ -93,7 +93,7 @@ body {
       height: 100%;
       width: 100%;
       background-color: #2D2D2D;
-      padding: 3rem 2rem;
+      padding: 6rem 2rem;
       transition: all 0.4s ease-in-out;
 
       .navbar_mobile_dropdown_link {
@@ -101,7 +101,7 @@ body {
       }
 
       .mobile_link {
-        color: white;
+        color: $background-color;
         text-decoration: none;
       }
 
@@ -177,7 +177,7 @@ body {
     flex-grow: 1;
 
     .landing-page {
-      margin-top: 2rem;
+      margin-top: 4rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -226,7 +226,6 @@ body {
     }
     @media (min-width: $tablet) {
       .landing-page {
-        margin-top: 4rem;
 
         .landing-page_text {
 
@@ -677,14 +676,14 @@ body {
             padding: 2.5rem 2.5rem 1.5rem 2.5rem;
 
             .our-services_card_title {
-              color: white;
+              color: $background-color;
               font-size: 1.5rem;
               margin-bottom: 1rem;
               margin-top: 0;
             }
 
             .our-services_card_para {
-              color: white;
+              color: $background-color;
               font-size: 0.8rem;
               line-height: 1.75rem;
               margin-bottom: 2rem;
@@ -833,14 +832,14 @@ body {
         .new_client_title {
           font-size: $title-size;
           margin-bottom: 2.5rem;
-          color: white;
+          color: $background-color;
         }
 
         .new_client_para {
           font-size: $para-size;
           line-height: 1.75rem;
           margin-bottom: 1.5rem;
-          color: white;
+          color: $background-color;
         }
 
         .new_client_button_container {
@@ -937,6 +936,7 @@ body {
   }
 
   .footer {
+    background-color: $navigation-bg;
 
     .footer_content_container {
       width: 90dvw;
@@ -962,6 +962,7 @@ body {
       }
 
       .footer_container_info {
+        color: $background-color;
 
         .footer_street {
           margin-bottom: 1.5rem;
