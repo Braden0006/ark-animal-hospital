@@ -17,6 +17,10 @@ $tablet: 768px;
 }
 
 body {
+  button {
+    cursor: pointer;
+  }
+
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -210,6 +214,7 @@ body {
             color: white;
             font-size: $button-size;
             border: none;
+            margin-right: 0.25rem;
           }
         }
 
@@ -336,7 +341,6 @@ body {
 
     @media (min-width: $laptop) {
       .about-us {
-        margin-top: 0;
         align-items: center;
         max-width: 55rem;
         flex-direction: row;
@@ -433,6 +437,13 @@ body {
           .about-us_doctor_image {
             width: 24rem;
             height: 22rem;
+          }
+
+          .about-us_doctor_content-container {
+
+            .about_us_doctor_button {
+              font-size: 0.9rem;
+            }
           }
         }
       }
@@ -704,6 +715,7 @@ body {
     @media (min-width: $laptop) {
       .our-services {
         max-width: 55rem;
+        margin-top: 0;
 
         .our_services_container {
 
@@ -833,7 +845,7 @@ body {
 
         .new_client_button_container {
           display: flex;
-          gap: 2rem;
+          gap: 0.5rem;
 
           .new_client_button {
             border-radius: 0.5rem;
@@ -842,7 +854,6 @@ body {
             color: white;
             font-size: $button-size;
             border: none;
-            cursor: pointer;
           }
         }
       }
