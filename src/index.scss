@@ -4,7 +4,12 @@ $button-bg: #008080;
 $paragraph-color: #333333;
 
 $title-size: 2rem;
+$title_size_laptop: 2.25rem;
+$title_size_desktop: 2.5rem;
+
 $para-size: 1rem;
+$para_size_laptop: 1.1rem;
+$para_size_desktop: 1.15rem;
 $button-size: 0.75rem;
 
 $desktop: 1440px;
@@ -19,6 +24,10 @@ $tablet: 768px;
 body {
   button {
     cursor: pointer;
+  }
+
+  h2 {
+    margin-top: 0;
   }
 
   display: flex;
@@ -262,8 +271,8 @@ body {
 
             .landing-page_text_para {
               color: $paragraph-color;
-              line-height: 1.6rem;
-              font-size: 1.25rem;
+              line-height: 2rem;
+              font-size: $para_size_laptop;
             }
 
             .landing-page_text_button {
@@ -292,6 +301,10 @@ body {
 
             .landing-page_text_para {
               width: 70%;
+            }
+
+            .landing-page_text_button {
+              font-size: 1rem;
             }
           }
         }
@@ -343,6 +356,7 @@ body {
         align-items: center;
         max-width: 55rem;
         flex-direction: row;
+        height: 75dvh;
 
         .about-us_container {
           display: flex;
@@ -352,6 +366,18 @@ body {
           .about-us_image {
             width: 24rem;
             height: 22rem;
+          }
+
+          .about_us_container_info {
+
+            .about-us_title {
+              font-size: $title-size_laptop;
+            }
+
+            .about-us_para {
+              font-size: $para_size_laptop;
+              line-height: 2rem;
+            }
           }
         }
       }
@@ -365,6 +391,18 @@ body {
         .about-us_container {
           width: 68rem;
           gap: 8rem;
+
+          .about_us_container_info {
+
+            .about-us_title {
+              font-size: $title-size_desktop;
+            }
+
+            .about-us_para {
+              font-size: $para_size_desktop;
+              line-height: 2rem;
+            }
+          }
         }
       }
     }
@@ -443,6 +481,15 @@ body {
             .about_us_doctor_button {
               font-size: 0.9rem;
             }
+
+            .about-us_doctor_title {
+              font-size: $title_size_laptop;
+            }
+
+            .about-us_doctor_para {
+              font-size: $para_size_laptop;
+              line-height: 2rem;
+            }
           }
         }
       }
@@ -455,6 +502,21 @@ body {
           width: 68rem;
           max-width: none;
           gap: 8rem;
+
+          .about-us_doctor_content-container {
+
+            .about_us_doctor_button {
+              font-size: 1rem;
+            }
+
+            .about-us_doctor_title {
+              font-size: $title_size_desktop;
+            }
+
+            .about-us_doctor_para {
+              font-size: $para_size_desktop;
+            }
+          }
         }
       }
     }
@@ -593,6 +655,7 @@ body {
           .our-team_title {
             width: 100%;
             max-width: 55rem;
+            font-size: $title_size_laptop;
           }
 
           .our-team_card-container {
@@ -684,7 +747,7 @@ body {
 
             .our-services_card_para {
               color: $background-color;
-              font-size: 0.8rem;
+              font-size: 1rem;
               line-height: 1.75rem;
               margin-bottom: 2rem;
             }
@@ -718,6 +781,10 @@ body {
 
         .our_services_container {
 
+          .our-services_title {
+            font-size: $title_size_laptop;
+          }
+
           .our-services_card-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -726,10 +793,11 @@ body {
             .our-services_card {
               width: auto;
               padding: 1.25rem 1.25rem;
-              height: 18rem;
+              height: 22rem;
 
               .our-services_card_title {
                 margin: 0;
+                font-size: 1.6rem;
               }
 
               .our-services_card_para {
@@ -746,6 +814,13 @@ body {
 
         .our_services_container {
           width: 68rem;
+
+          .our-services_card-container {
+
+            .our-services_card {
+              height: 18rem;
+            }
+          }
         }
       }
     }
@@ -800,6 +875,15 @@ body {
 
         .finance_help_content_container {
 
+          .finance_help_title {
+            font-size: $title_size_laptop;
+          }
+
+          .finance_help_para {
+            font-size: $para_size_laptop;
+            line-height: 2rem;
+          }
+
           .finance_help_button_container {
 
             .finance_help_button {
@@ -814,6 +898,22 @@ body {
 
         .finance_help_content_container {
           width: 68rem;
+
+          .finance_help_title {
+            font-size: $title_size_desktop;
+          }
+
+          .finance_help_para {
+            font-size: $para_size_desktop;
+            line-height: 2rem;
+          }
+
+          .finance_help_button_container {
+
+            .finance_help_button {
+              font-size: 1rem;
+            }
+          }
         }
       }
     }
@@ -867,6 +967,15 @@ body {
 
         .new_client_container {
 
+          .new_client_title {
+            font-size: $title_size_laptop;
+          }
+
+          .new_client_para {
+            font-size: $para_size_laptop;
+            line-height: 2rem;
+          }
+
           .new_client_button_container {
 
             .new_client_button {
@@ -881,6 +990,21 @@ body {
 
         .new_client_container {
           width: 68rem;
+
+          .new_client_title {
+            font-size: $title_size_desktop;
+          }
+
+          .new_client_para {
+            font-size: $para_size_desktop;
+          }
+
+          .new_client_button_container {
+
+            .new_client_button {
+              font-size: 1rem;
+            }
+          }
         }
       }
     }
@@ -918,6 +1042,10 @@ body {
 
         .cta_container {
 
+          .cta_title {
+            font-size: $title_size_laptop;
+          }
+
           .cta_button {
             font-size: 0.9rem;
           }
@@ -929,6 +1057,14 @@ body {
 
         .cta_container {
           width: 68rem;
+
+          .cta_title {
+            font-size: $title_size_desktop;
+          }
+
+          .cta_button {
+            font-size: 1rem;
+          }
         }
       }
     }
