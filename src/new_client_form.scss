@@ -1,7 +1,21 @@
 $background-color: #F8F8F8;
+$navigation-bg: #2D2D2D;
+$button-size: 0.75rem;
+$button-bg: #008080;
 
 body {
   background-color: $background-color;
+
+  input {
+    padding: 0.5rem 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background: transparent;
+    outline: none;
+  }
 
   .new_client {
     width: 100vw;
@@ -11,12 +25,12 @@ body {
 
     .new_client_svg_container {
       width: 85vw;
-      margin-top: 1rem;
+      margin-top: 4rem;
 
       .back_button_svg {
         height: 4rem;
         width: 4rem;
-        margin-left: -12px;
+        margin-left: -13px;
       }
     }
 
@@ -36,6 +50,10 @@ body {
       .new_client_form_container {
         margin: 2rem 0;
 
+        .new_client_form_title {
+          margin: 3rem 0;
+        }
+
         .new_client_form {
 
           .new_client_input_group {
@@ -46,7 +64,7 @@ body {
 
             .new_client_input {
               display: flex;
-              flex-direction: column;
+              align-items: center;
 
               .new_client_label {
                 margin-bottom: 0.25rem;
@@ -75,6 +93,17 @@ body {
               flex-direction: row-reverse;
             }
           }
+
+          .new_client_submit_button {
+            margin-bottom: 4rem;
+            border-radius: 0.5rem;
+            background-color: $button-bg;
+            padding: 0.75rem 1rem;
+            color: white;
+            font-size: $button-size;
+            border: none;
+            margin-right: 0.25rem;
+          }
         }
       }
     }
@@ -99,6 +128,10 @@ body {
                   justify-content: center;
                 }
               }
+            }
+
+            .new_client_submit_button {
+              font-size: 0.9rem;
             }
           }
         }
