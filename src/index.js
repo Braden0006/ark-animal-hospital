@@ -1,11 +1,19 @@
 let modalBackground = document.getElementById("modal_background");
-let modal = document.getElementById("modal");
-let modal2 = document.getElementById("modal2");
+let card1 = document.getElementById("card1");
 let card2 = document.getElementById("card2");
 let card3 = document.getElementById("card3");
+let card4 = document.getElementById("card4");
+let card5 = document.getElementById("card5");
+let card6 = document.getElementById("card6");
+
 let body = document.getElementById("body");
-let modalTitle = document.getElementById("modal_title");
-let modalPara = document.getElementById("modal_para");
+
+let modal = document.getElementById("modal");
+let modal2 = document.getElementById("modal2");
+let modal3 = document.getElementById("modal3");
+let modal4 = document.getElementById("modal4");
+let modal5 = document.getElementById("modal5");
+let modal6 = document.getElementById("modal6");
 
 let bar1 = document.getElementById("bar-1");
 let bar2 = document.getElementById("bar-2");
@@ -22,22 +30,33 @@ function cardClicked() {
 }
 
 function card2Clicked() {
-    modalBackground.classList.add("show_modal_background");
-    modal2.classList.add("show_modal");
-    body.classList.add("stop_scrolling");
+    modalBackground.classList.toggle("show_modal_background");
+    modal2.classList.toggle("show_modal");
+    body.classList.toggle("stop_scrolling");
 }
 
 function card3Clicked() {
     modalBackground.classList.add("show_modal_background");
-    modal.classList.add("show_modal");
+    modal3.classList.add("show_modal");
     body.classList.add("stop_scrolling");
+}
 
-    modalTitle.innerHTML = "Allison";
-    modalPara.innerHTML = "" +
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n" +
-        "Quisque consequat, justo nec gravida auctor, sem velit vehicula\n" +
-        "augue, id rhoncus lectus elit vel elit. Sed accumsan fermentum\n" +
-        "sem, vel fringilla lacus pulvinar non."
+function card4Clicked() {
+    modalBackground.classList.add("show_modal_background");
+    modal4.classList.add("show_modal");
+    body.classList.add("stop_scrolling");
+}
+
+function card5Clicked() {
+    modalBackground.classList.add("show_modal_background");
+    modal5.classList.add("show_modal");
+    body.classList.add("stop_scrolling");
+}
+
+function card6Clicked() {
+    modalBackground.classList.add("show_modal_background");
+    modal6.classList.add("show_modal");
+    body.classList.add("stop_scrolling");
 }
 
 function hideModal() {
@@ -46,23 +65,64 @@ function hideModal() {
     body.classList.remove("stop_scrolling");
 }
 
-//modal.addEventListener("click", cardClicked);
-//modal.addEventListener("click", hideModal);
-
-if (modal.addEventListener) {
-    modal.addEventListener("click", cardClicked)
+function hideModal2() {
+    modalBackground.classList.remove("show_modal_background");
+    modal2.classList.remove("show_modal");
+    body.classList.remove("stop_scrolling");
 }
 
-if (modal2.addEventListener) {
-    modal2.addEventListener("click", cardClicked);
+function hideModal3() {
+    modalBackground.classList.remove("show_modal_background");
+    modal3.classList.remove("show_modal");
+    body.classList.remove("stop_scrolling");
+}
+
+function hideModal4() {
+    modalBackground.classList.remove("show_modal_background");
+    modal4.classList.remove("show_modal");
+    body.classList.remove("stop_scrolling");
+}
+
+function hideModal5() {
+    modalBackground.classList.remove("show_modal_background");
+    modal5.classList.remove("show_modal");
+    body.classList.remove("stop_scrolling");
+}
+
+function hideModal6() {
+    modalBackground.classList.remove("show_modal_background");
+    modal6.classList.remove("show_modal");
+    body.classList.remove("stop_scrolling");
+}
+
+if (card1.addEventListener) {
+    card1.addEventListener("click", cardClicked);
+    modal.addEventListener("click", hideModal);
 }
 
 if (card2.addEventListener) {
     card2.addEventListener("click", card2Clicked);
+    modal2.addEventListener("click", hideModal2);
 }
 
 if (card3.addEventListener) {
     card3.addEventListener("click", card3Clicked);
+    modal3.addEventListener("click", hideModal3);
+}
+
+if (card4.addEventListener) {
+    card4.addEventListener("click", card4Clicked);
+    modal4.addEventListener("click", hideModal4);
+}
+
+if (card5.addEventListener) {
+    card5.addEventListener("click", card5Clicked);
+    modal5.addEventListener("click", hideModal5);
+}
+
+if (card6.addEventListener) {
+    card6.addEventListener("click", card6Clicked);
+    modal6.addEventListener("click", hideModal6);
 }
 
 menu.addEventListener("click", () => {

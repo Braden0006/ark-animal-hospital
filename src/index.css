@@ -442,6 +442,7 @@ body main .our-team .our-team_container .our-team_card-container .our-team_card 
 }
 body main .our-team .our-team_container .our-team_card-container .our-team_card .our-team_card-position {
   font-size: 0.8rem;
+  text-align: center;
 }
 body main .our-team .our-team_container .card_container-two {
   margin-top: 3rem;
@@ -470,7 +471,7 @@ body main .our-team .our_team_card_modal {
 body main .our-team .our_team_card_modal .our_team_card_modal_container {
   display: flex;
   flex-direction: column;
-  height: 60%;
+  height: 70%;
   width: 85%;
   background-color: white;
   border-radius: 2rem;
@@ -483,7 +484,7 @@ body main .our-team .our_team_card_modal .our_team_card_modal_container .modal_t
 body main .our-team .our_team_card_modal .our_team_card_modal_container .modal_top_content .modal_image {
   border-radius: 9999px;
   height: 7.5rem;
-  width: 8rem;
+  width: 7.5rem;
   margin-bottom: 1.5rem;
   object-fit: cover;
   margin-right: 1rem;
@@ -496,6 +497,7 @@ body main .our-team .our_team_card_modal .our_team_card_modal_container .modal_p
   font-size: 0.8rem;
   line-height: 1.5rem;
   color: #333333;
+  overflow: auto;
 }
 body main .our-team .show_modal_background {
   display: block;
@@ -525,8 +527,14 @@ body main .our-team .show_modal {
     width: 100%;
     max-width: 55rem;
   }
+  body main .our-team .our-team_container .our-team_card-container .our-team_card {
+    width: 20%;
+  }
   body main .our-team .our-team_container .card_container-two {
     max-width: 40rem;
+    justify-content: flex-start;
+    padding: 0 2rem;
+    gap: 7rem;
   }
   body main .our-team .our_team_card_modal .our_team_card_modal_container {
     width: 60%;
@@ -548,7 +556,8 @@ body main .our-team .show_modal {
   }
   body main .our-team .our-team_container .card_container-two {
     max-width: none;
-    padding: 0 9.5rem;
+    padding: 0 12rem;
+    gap: 9.5rem;
   }
 }
 body main .our-services {

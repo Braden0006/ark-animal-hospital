@@ -564,6 +564,7 @@ body {
 
             .our-team_card-position {
               font-size: 0.8rem;
+              text-align: center;
             }
           }
         }
@@ -598,7 +599,7 @@ body {
         .our_team_card_modal_container {
           display: flex;
           flex-direction: column;
-          height: 60%;
+          height: 70%;
           width: 85%;
           background-color: white;
           border-radius: 2rem;
@@ -611,7 +612,7 @@ body {
             .modal_image {
               border-radius: 9999px;
               height: 7.5rem;
-              width: 8rem;
+              width: 7.5rem;
               margin-bottom: 1.5rem;
               object-fit: cover;
               margin-right: 1rem;
@@ -627,6 +628,7 @@ body {
             font-size: 0.8rem;
             line-height: 1.5rem;
             color: $paragraph-color;
+            overflow: auto;
           }
         }
       }
@@ -663,10 +665,17 @@ body {
             justify-content: space-between;
             width: 100%;
             max-width: 55rem;
+
+            .our-team_card {
+              width: 20%;
+            }
           }
 
           .card_container-two {
             max-width: 40rem;
+            justify-content: flex-start;
+            padding: 0 2rem;
+            gap: 7rem;
           }
         }
 
@@ -699,7 +708,8 @@ body {
 
           .card_container-two {
             max-width: none;
-            padding: 0 9.5rem;
+            padding: 0 12rem;
+            gap: 9.5rem;
           }
         }
       }
