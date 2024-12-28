@@ -430,6 +430,16 @@ body {
 
           .about-us_doctor_title {
             font-size: $title-size;
+            margin-bottom: 0.25rem;
+          }
+
+          .christine_title {
+            margin-bottom: 0.25rem;
+          }
+
+          .christine_position {
+            font-size: 0.8rem;
+            margin-top: 0;
             margin-bottom: 2rem;
           }
 
@@ -471,6 +481,7 @@ body {
           flex-direction: row-reverse;
           gap: 4rem;
           max-width: 55rem;
+          align-items: center;
 
           .about-us_doctor_image {
             width: 24rem;
@@ -492,6 +503,10 @@ body {
               line-height: 2rem;
             }
           }
+        }
+
+        .about_us_christine_container {
+          flex-direction: row;
         }
       }
     }
@@ -516,6 +531,7 @@ body {
 
             .about-us_doctor_para {
               font-size: $para_size_desktop;
+              width: 36.25rem;
             }
           }
         }
@@ -566,6 +582,7 @@ body {
             .our-team_card-position {
               font-size: 0.8rem;
               text-align: center;
+              margin-top: 0.25rem;
             }
           }
         }

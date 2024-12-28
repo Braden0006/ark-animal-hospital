@@ -332,6 +332,14 @@ body main .about-us_doctor .about-us_doctor_container .about-us_doctor_image {
 }
 body main .about-us_doctor .about-us_doctor_container .about-us_doctor_content-container .about-us_doctor_title {
   font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+body main .about-us_doctor .about-us_doctor_container .about-us_doctor_content-container .christine_title {
+  margin-bottom: 0.25rem;
+}
+body main .about-us_doctor .about-us_doctor_container .about-us_doctor_content-container .christine_position {
+  font-size: 0.8rem;
+  margin-top: 0;
   margin-bottom: 2rem;
 }
 body main .about-us_doctor .about-us_doctor_container .about-us_doctor_content-container .about-us_doctor_para {
@@ -367,6 +375,7 @@ body main .about-us_doctor .about-us_doctor_container .about-us_doctor_content-c
     flex-direction: row-reverse;
     gap: 4rem;
     max-width: 55rem;
+    align-items: center;
   }
   body main .about-us_doctor .about-us_doctor_container .about-us_doctor_image {
     width: 24rem;
@@ -381,6 +390,9 @@ body main .about-us_doctor .about-us_doctor_container .about-us_doctor_content-c
   body main .about-us_doctor .about-us_doctor_container .about-us_doctor_content-container .about-us_doctor_para {
     font-size: 1.1rem;
     line-height: 2rem;
+  }
+  body main .about-us_doctor .about_us_christine_container {
+    flex-direction: row;
   }
 }
 @media (min-width: 1440px) {
@@ -400,6 +412,7 @@ body main .about-us_doctor .about-us_doctor_container .about-us_doctor_content-c
   }
   body main .about-us_doctor .about-us_doctor_container .about-us_doctor_content-container .about-us_doctor_para {
     font-size: 1.15rem;
+    width: 36.25rem;
   }
 }
 body main .our-team {
@@ -443,6 +456,7 @@ body main .our-team .our-team_container .our-team_card-container .our-team_card 
 body main .our-team .our-team_container .our-team_card-container .our-team_card .our-team_card-position {
   font-size: 0.8rem;
   text-align: center;
+  margin-top: 0.25rem;
 }
 body main .our-team .our-team_container .card_container-two {
   margin-top: 3rem;
