@@ -42,7 +42,7 @@ body .service_main .service_container .service_list {
 }
 @media (min-width: 768px) {
   body .service_main .service_container {
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
   body .service_main .service_container .service_title {
     font-size: 2.25rem;
@@ -55,9 +55,6 @@ body .service_main .service_container .service_list {
   }
 }
 @media (min-width: 1024px) {
-  body .service_main .service_container {
-    padding: 4rem 0;
-  }
   body .service_main .service_container .service_para {
     font-size: 1.1rem;
   }

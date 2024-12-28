@@ -26,4 +26,10 @@ body main .doctor_bio_content_container .doctor_bio_para {
   line-height: 1.8rem;
 }
 
+@media (min-width: 768px) {
+  body main .doctor_bio_svg_container {
+    margin-top: 2rem;
+  }
+}
+
 /*# sourceMappingURL=doctor_bio_page.css.map */

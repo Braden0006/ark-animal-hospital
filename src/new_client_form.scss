@@ -7,7 +7,6 @@ body {
   background-color: $background-color;
 
   input {
-    padding: 0.5rem 0;
     width: 100%;
     border-bottom: 1px solid black;
     border-top: none;
@@ -25,7 +24,7 @@ body {
 
     .new_client_svg_container {
       width: 85vw;
-      margin-top: 4rem;
+      margin-top: 1rem;
 
       .back_button_svg {
         height: 4rem;
@@ -68,6 +67,7 @@ body {
 
               .new_client_label {
                 margin-bottom: 0.25rem;
+                margin-right: 0.5rem;
               }
             }
 
@@ -105,6 +105,15 @@ body {
             margin-right: 0.25rem;
           }
         }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .new_client {
+
+      .new_client_svg_container {
+        margin-top: 2rem;
       }
     }
   }

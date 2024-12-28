@@ -10,6 +10,8 @@ main .back_button_container {
 }
 main .back_button_container .back_button_svg {
   margin-left: -17.5px;
+  height: 4rem;
+  width: 4rem;
 }
 main .contact {
   display: flex;
@@ -100,7 +102,7 @@ main .contact_info_container .contact_icon_container .contact_icon_svg {
     justify-content: center;
   }
   main .back_button_container {
-    margin-top: 0;
+    margin-top: 2rem;
     margin-bottom: 4rem;
   }
   main .contact {

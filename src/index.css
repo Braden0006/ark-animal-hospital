@@ -329,6 +329,7 @@ body main .about-us_doctor .about-us_doctor_container .about-us_doctor_image {
   width: inherit;
   border-radius: 1.5rem;
   margin-bottom: 2rem;
+  height: 30rem;
 }
 body main .about-us_doctor .about-us_doctor_container .about-us_doctor_content-container .about-us_doctor_title {
   font-size: 2rem;
@@ -379,7 +380,6 @@ body main .about-us_doctor .about-us_doctor_container .about-us_doctor_content-c
   }
   body main .about-us_doctor .about-us_doctor_container .about-us_doctor_image {
     width: 24rem;
-    height: 30rem;
   }
   body main .about-us_doctor .about-us_doctor_container .about-us_doctor_content-container .about_us_doctor_button {
     font-size: 0.9rem;
@@ -441,6 +441,7 @@ body main .our-team .our-team_container .our-team_card-container .our-team_card 
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 body main .our-team .our-team_container .our-team_card-container .our-team_card .our-team_card-image {
   border-radius: 9999px;

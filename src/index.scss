@@ -422,7 +422,8 @@ body {
         .about-us_doctor_image {
           width: inherit;
           border-radius: 1.5rem;
-          margin-bottom: 2rem
+          margin-bottom: 2rem;
+          height: 30rem;
 
         }
 
@@ -485,7 +486,6 @@ body {
 
           .about-us_doctor_image {
             width: 24rem;
-            height: 30rem;
           }
 
           .about-us_doctor_content-container {
@@ -565,6 +565,7 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
+            cursor: pointer;
 
             .our-team_card-image {
               border-radius: 9999px;
