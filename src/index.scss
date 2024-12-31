@@ -1080,8 +1080,11 @@ body {
             font-size: $title_size_laptop;
           }
 
-          .cta_button {
-            font-size: 0.9rem;
+          .cta_button_container {
+
+            .cta_button {
+              font-size: 0.9rem;
+            }
           }
         }
       }
@@ -1096,13 +1099,15 @@ body {
             font-size: $title_size_desktop;
           }
 
-          .cta_button {
-            font-size: 1rem;
+          .cta_button_container {
+
+            .cta_button {
+              font-size: 1rem;
+            }
           }
         }
       }
     }
-
   }
 
   .footer {
