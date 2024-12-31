@@ -819,7 +819,11 @@ body main .cta .cta_container .cta_title {
   margin-bottom: 2rem;
   text-align: center;
 }
-body main .cta .cta_container .cta_button {
+body main .cta .cta_container .cta_button_container {
+  display: flex;
+  gap: 0.5rem;
+}
+body main .cta .cta_container .cta_button_container .cta_button {
   border-radius: 0.5rem;
   background-color: #008080;
   padding: 0.75rem 1rem;

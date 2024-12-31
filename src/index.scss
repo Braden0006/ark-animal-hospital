@@ -1056,13 +1056,18 @@ body {
           text-align: center;
         }
 
-        .cta_button {
-          border-radius: 0.5rem;
-          background-color: $button-bg;
-          padding: 0.75rem 1rem;
-          color: white;
-          font-size: $button-size;
-          border: none;
+        .cta_button_container {
+          display: flex;
+          gap: 0.5rem;
+
+          .cta_button {
+            border-radius: 0.5rem;
+            background-color: $button-bg;
+            padding: 0.75rem 1rem;
+            color: white;
+            font-size: $button-size;
+            border: none;
+          }
         }
       }
     }
