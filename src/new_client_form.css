@@ -65,12 +65,20 @@ body .new_client .new_client_container .new_client_form_container .new_client_fo
   flex-direction: row-reverse;
   gap: 0.25rem;
 }
-body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_pet {
+body .new_client .new_client_container .new_client_form_container .new_client_form .pet {
+  margin-bottom: 1rem;
+}
+body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_pet_group {
+  margin-bottom: 4rem;
+}
+body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_pet_group .new_client_pet_title {
+  font-size: 1.15rem;
+}
+body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_pet_group .new_client_pet {
   display: flex;
   gap: 1rem;
-  margin-bottom: 2rem;
 }
-body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_pet .new_client_pet_input {
+body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_pet_group .new_client_pet .new_client_pet_input {
   display: flex;
   gap: 0.25rem;
   flex-direction: row-reverse;
@@ -84,6 +92,7 @@ body .new_client .new_client_container .new_client_form_container .new_client_fo
   font-size: 0.75rem;
   border: none;
   margin-right: 0.25rem;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   body .new_client .new_client_svg_container {
@@ -97,6 +106,9 @@ body .new_client .new_client_container .new_client_form_container .new_client_fo
   body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_input_group .new_client_radio_container .new_client_input_radio {
     flex-direction: column;
     justify-content: center;
+  }
+  body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_pet_group {
+    margin-bottom: 6rem;
   }
   body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_submit_button {
     font-size: 0.9rem;

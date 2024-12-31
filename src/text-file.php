@@ -44,7 +44,40 @@ $female = $_POST['male-female'];
 $spayed = $_POST['spayed-neutered'];
 $neutered = $_POST['spayed-neutered'];
 
-$filePath = 'data.txt';
+$petName2 = $_POST['pet_name2'];
+$petAge2 = $_POST['pet_age2'];
+$species2 = $_POST['species2'];
+$breed2 = $_POST['breed2'];
+$color2 = $_POST['pet_color2'];
+
+$male2 = $_POST['male-female2'];
+$female2 = $_POST['male-female2'];
+$spayed2 = $_POST['spayed-neutered2'];
+$neutered2 = $_POST['spayed-neutered2'];
+
+$petName3 = $_POST['pet_name3'];
+$petAge3 = $_POST['pet_age3'];
+$species3 = $_POST['species3'];
+$breed3 = $_POST['breed3'];
+$color3 = $_POST['pet_color3'];
+
+$male3 = $_POST['male-female3'];
+$female3 = $_POST['male-female3'];
+$spayed3 = $_POST['spayed-neutered3'];
+$neutered3 = $_POST['spayed-neutered3'];
+
+$petName4 = $_POST['pet_name4'];
+$petAge4 = $_POST['pet_age4'];
+$species4 = $_POST['species4'];
+$breed4 = $_POST['breed4'];
+$color4 = $_POST['pet_color4'];
+
+$male4 = $_POST['male-female4'];
+$female4 = $_POST['male-female4'];
+$spayed4 = $_POST['spayed-neutered4'];
+$neutered4 = $_POST['spayed-neutered4'];
+
+$filePath = 'new-client.txt';
 
 $data = "First Name: $firstName
 Middle Initial: $middleInitial
@@ -73,12 +106,44 @@ Pet Age: $petAge
 Species: $species
 Breed: $breed
 Color: $color
-
 Sex:
 $male
 $female
 $spayed
-$neutered";
+$neutered
+
+Pet Name 2: $petName2
+Pet Age 2: $petAge2
+Species 2: $species2
+Breed 2: $breed2
+Color 2: $color2
+Sex:
+$male2
+$female2
+$spayed2
+$neutered2
+
+Pet Name 3: $petName3
+Pet Age 3: $petAge3
+Species 3: $species3
+Breed 3: $breed3
+Color 3: $color3
+Sex:
+$male3
+$female3
+$spayed3
+$neutered3
+
+Pet Name 4: $petName4
+Pet Age 4: $petAge4
+Species 4: $species4
+Breed 4: $breed4
+Color 4: $color4
+Sex:
+$male4
+$female4
+$spayed4
+$neutered4";
 
 $fileHandle = fopen($filePath, 'a');
 ftruncate($fileHandle, 0);
@@ -104,7 +169,7 @@ try {
 
     $mail->addAddress($config["smtp_username"], "Braden");
 
-    $mail->addAttachment('data.txt');
+    $mail->addAttachment('new-client.txt');
 
     $mail->Subject = 'You have a new Client Form!';
     $mail->Body = 'Here is your newly submitted client form:';

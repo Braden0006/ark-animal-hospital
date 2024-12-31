@@ -82,15 +82,27 @@ body {
               }
             }
           }
-          .new_client_pet {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 2rem;
 
-            .new_client_pet_input {
+          .pet {
+            margin-bottom: 1rem;
+          }
+
+          .new_client_pet_group {
+            margin-bottom: 4rem;
+
+            .new_client_pet_title {
+              font-size: 1.15rem;
+            }
+
+            .new_client_pet {
               display: flex;
-              gap: 0.25rem;
-              flex-direction: row-reverse;
+              gap: 1rem;
+
+              .new_client_pet_input {
+                display: flex;
+                gap: 0.25rem;
+                flex-direction: row-reverse;
+              }
             }
           }
 
@@ -103,6 +115,7 @@ body {
             font-size: $button-size;
             border: none;
             margin-right: 0.25rem;
+            cursor: pointer;
           }
         }
       }
@@ -137,6 +150,10 @@ body {
                   justify-content: center;
                 }
               }
+            }
+
+            .new_client_pet_group {
+              margin-bottom: 6rem;
             }
 
             .new_client_submit_button {
