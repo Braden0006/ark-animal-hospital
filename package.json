@@ -2,8 +2,11 @@
   "dependencies": {
     "modern-normalize": "^3.0.1"
   },
-
   "scripts": {
     "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
   }
 }
