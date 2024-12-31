@@ -3,7 +3,7 @@ body .service_main {
   height: 100dvh;
   display: flex;
   justify-content: center;
-  background-image: url("images/our-service-photo.jpg");
+  background-image: url("images/pet-dental-service.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -68,4 +68,4 @@ body .service_main .service_container .service_list {
   }
 }
 
-/*# sourceMappingURL=wellness_checkup.css.map */
+/*# sourceMappingURL=pet_dentistry_page.css.map */

@@ -119,6 +119,9 @@ main .contact_info_container .contact_icon_container .contact_icon_svg {
     width: 60%;
     margin: 0;
   }
+  main .contact .contact_container .contact_form .contact_button {
+    font-size: 0.9rem;
+  }
   main .contact_info_container {
     display: flex;
     justify-content: space-around;

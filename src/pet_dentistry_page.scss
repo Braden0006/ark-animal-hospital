@@ -3,10 +3,9 @@ body {
   .service_main {
     width: 100vw;
     height: 100dvh;
-    overflow: auto;
     display: flex;
     justify-content: center;
-    background-image: url("images/pet-illness-service.jpg");
+    background-image: url("images/pet-dental-service.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -42,7 +41,7 @@ body {
       }
 
       .service_list {
-        margin: 1rem 0;
+        margin: 2rem 0;
         line-height: 1.8rem;
         color: white;
         font-weight: 300;

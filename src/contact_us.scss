@@ -146,6 +146,13 @@ main {
       .contact_container {
         width: 60%;
         margin: 0;
+
+        .contact_form {
+
+          .contact_button {
+            font-size: 0.9rem;
+          }
+        }
       }
     }
 
