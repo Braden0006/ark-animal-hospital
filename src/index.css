@@ -169,7 +169,11 @@ body main .landing-page .landing-page_container .landing-page_text .landing-page
   font-size: 1rem;
   line-height: 1.5rem;
 }
-body main .landing-page .landing-page_container .landing-page_text .landing-page_text_button {
+body main .landing-page .landing-page_container .landing-page_text .landing_page_button_container {
+  display: flex;
+  gap: 0.5rem;
+}
+body main .landing-page .landing-page_container .landing-page_text .landing_page_button_container .landing-page_text_button {
   margin-bottom: 4rem;
   border-radius: 0.5rem;
   background-color: #008080;
@@ -177,7 +181,6 @@ body main .landing-page .landing-page_container .landing-page_text .landing-page
   color: white;
   font-size: 0.75rem;
   border: none;
-  margin-right: 0.25rem;
 }
 body main .landing-page .landing-page_container .landing-page_image {
   width: inherit;
@@ -214,7 +217,7 @@ body main .landing-page .landing-page_container .landing-page_image {
     line-height: 2rem;
     font-size: 1.1rem;
   }
-  body main .landing-page .landing-page_container .landing-page_text .landing-page_text_button {
+  body main .landing-page .landing-page_container .landing-page_text .landing_page_button_container .landing-page_text_button {
     font-size: 0.9rem;
   }
   body main .landing-page .landing-page_container .landing-page_image {
@@ -280,6 +283,7 @@ body main .about-us .about-us_container .about_us_container_info .about-us_para 
   }
   body main .about-us .about-us_container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     gap: 4rem;
   }
@@ -694,7 +698,7 @@ body main .finance_help .finance_help_content_container .finance_help_para {
 }
 body main .finance_help .finance_help_content_container .finance_help_button_container {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 body main .finance_help .finance_help_content_container .finance_help_button_container .finance_help_button {
   border-radius: 0.5rem;

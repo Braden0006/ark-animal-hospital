@@ -21,7 +21,7 @@ try {
     $mail->SMTPAuth = true;
 
     $mail->Host = $config["smtp_host"];
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = $config["smtp_port"];
 
     $mail->Username = $config["smtp_username"];

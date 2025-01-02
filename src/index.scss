@@ -215,15 +215,19 @@ body {
             line-height: 1.5rem;
           }
 
-          .landing-page_text_button {
-            margin-bottom: 4rem;
-            border-radius: 0.5rem;
-            background-color: $button-bg;
-            padding: 0.75rem 1rem;
-            color: white;
-            font-size: $button-size;
-            border: none;
-            margin-right: 0.25rem;
+          .landing_page_button_container {
+            display: flex;
+            gap: 0.5rem;
+
+            .landing-page_text_button {
+              margin-bottom: 4rem;
+              border-radius: 0.5rem;
+              background-color: $button-bg;
+              padding: 0.75rem 1rem;
+              color: white;
+              font-size: $button-size;
+              border: none;
+            }
           }
         }
 
@@ -275,8 +279,11 @@ body {
               font-size: $para_size_laptop;
             }
 
-            .landing-page_text_button {
-              font-size: 0.9rem;
+            .landing_page_button_container {
+
+              .landing-page_text_button {
+                font-size: 0.9rem;
+              }
             }
           }
 
@@ -360,6 +367,7 @@ body {
 
         .about-us_container {
           display: flex;
+          align-items: center;
           justify-content: space-between;
           gap: 4rem;
 
@@ -880,7 +888,7 @@ body {
 
         .finance_help_button_container {
           display: flex;
-          gap: 1rem;
+          gap: 0.5rem;
 
           .finance_help_button {
             border-radius: 0.5rem;
