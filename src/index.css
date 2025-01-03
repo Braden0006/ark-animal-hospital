@@ -199,9 +199,8 @@ body main .landing-page .landing-page_container .landing-page_image {
     flex-direction: row;
     max-width: 55rem;
     height: 100dvh;
-    align-items: normal;
+    align-items: center;
     margin-top: 0;
-    padding-top: 10rem;
     gap: 4rem;
   }
   body main .landing-page .landing-page_container {
@@ -221,8 +220,8 @@ body main .landing-page .landing-page_container .landing-page_image {
     font-size: 0.9rem;
   }
   body main .landing-page .landing-page_container .landing-page_image {
-    width: 24rem;
-    height: 22rem;
+    width: 28rem;
+    height: 28rem;
   }
 }
 @media (min-width: 1440px) {
@@ -288,8 +287,8 @@ body main .about-us .about-us_container .about_us_container_info .about-us_para 
     gap: 4rem;
   }
   body main .about-us .about-us_container .about-us_image {
-    width: 24rem;
-    height: 22rem;
+    width: 26rem;
+    height: 26rem;
   }
   body main .about-us .about-us_container .about_us_container_info .about-us_title {
     font-size: 2.25rem;
