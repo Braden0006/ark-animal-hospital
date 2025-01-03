@@ -62,7 +62,7 @@ body .new_client .new_client_container .new_client_form_container .new_client_fo
 }
 body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_input_group .new_client_radio_container .new_client_input_radio {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
   gap: 0.25rem;
 }
 body .new_client .new_client_container .new_client_form_container .new_client_form .pet {
@@ -81,7 +81,7 @@ body .new_client .new_client_container .new_client_form_container .new_client_fo
 body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_pet_group .new_client_pet .new_client_pet_input {
   display: flex;
   gap: 0.25rem;
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
 }
 body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_submit_button {
   margin-bottom: 4rem;

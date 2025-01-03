@@ -77,7 +77,7 @@ body {
 
               .new_client_input_radio {
                 display: flex;
-                flex-direction: row-reverse;
+                flex-direction: column-reverse;
                 gap: 0.25rem;
               }
             }
@@ -101,7 +101,7 @@ body {
               .new_client_pet_input {
                 display: flex;
                 gap: 0.25rem;
-                flex-direction: row-reverse;
+                flex-direction: column-reverse;
               }
             }
           }
