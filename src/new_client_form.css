@@ -110,6 +110,9 @@ body .new_client .new_client_container .new_client_form_container .new_client_fo
   body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_pet_group {
     margin-bottom: 6rem;
   }
+  body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_pet_group .new_client_pet .new_client_pet_input {
+    flex-direction: row-reverse;
+  }
   body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_submit_button {
     font-size: 0.9rem;
   }

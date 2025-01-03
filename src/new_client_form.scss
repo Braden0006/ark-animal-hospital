@@ -154,6 +154,13 @@ body {
 
             .new_client_pet_group {
               margin-bottom: 6rem;
+
+              .new_client_pet {
+
+                .new_client_pet_input {
+                  flex-direction: row-reverse;
+                }
+              }
             }
 
             .new_client_submit_button {
