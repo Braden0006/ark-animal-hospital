@@ -20,6 +20,9 @@ $city = $_POST['city'];
 $state = $_POST['state'];
 $zip = $_POST['zip'];
 
+$mailingAddressYes = $_POST['yes-no'];
+$mailingAddressNo = $_POST['yes-no'];
+
 $mailingAddress = $_POST['mailing_address-2'];
 $city2 = $_POST['city-2'];
 $state2 = $_POST['state-2'];
@@ -92,6 +95,10 @@ City: $city
 State: $state
 Zip: $zip
 
+Mailing address the same as physical address?: 
+$mailingAddressYes
+$mailingAddressNo
+
 Mailing Address: $mailingAddress
 City2: $city2
 State2: $state2
@@ -101,8 +108,8 @@ Phone: $phone
 Cell: $cell
 Spouses Phone: $spousePhone
 
-Email Address: $email
-Place of Employment: $employment
+Email: $email
+Employment: $employment
 Phone: $phone2
 
 Pet Name: $petName
