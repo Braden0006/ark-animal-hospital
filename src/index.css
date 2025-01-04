@@ -32,6 +32,10 @@ body .navbar_mobile .navbar_item-container .navbar_logo {
   width: 3rem;
   border-radius: 5rem;
 }
+body .navbar_mobile .navbar_item-container .navbar_mobile_owned {
+  color: white;
+  font-size: 0.65rem;
+}
 body .navbar_mobile .navbar_item-container .navbar_hamburger-menu {
   position: relative;
   display: flex;
@@ -127,6 +131,10 @@ body .navbar_laptop {
     height: 5rem;
     width: 5rem;
     border-radius: 5rem;
+  }
+  body .navbar_laptop .navbar_laptop_container .navbar_laptop_owned {
+    color: white;
+    font-size: 0.6rem;
   }
   body .navbar_laptop .navbar_laptop_container .navbar_laptop_link_container {
     display: flex;

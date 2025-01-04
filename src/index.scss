@@ -53,6 +53,11 @@ body {
         border-radius: 5rem;
       }
 
+      .navbar_mobile_owned {
+        color: white;
+        font-size: 0.65rem;
+      }
+
       .navbar_hamburger-menu {
         position: relative;
         display: flex;
@@ -163,6 +168,11 @@ body {
           height: 5rem;
           width: 5rem;
           border-radius: 5rem;
+        }
+
+        .navbar_laptop_owned {
+          color: white;
+          font-size: 0.6rem;
         }
 
         .navbar_laptop_link_container {
