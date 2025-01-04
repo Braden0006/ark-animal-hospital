@@ -101,6 +101,10 @@ Phone: $phone
 Cell: $cell
 Spouses Phone: $spousePhone
 
+Email Address: $email
+Place of Employment: $employment
+Phone: $phone2
+
 Pet Name: $petName
 Pet Age: $petAge
 Species: $species
