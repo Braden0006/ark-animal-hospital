@@ -871,7 +871,7 @@ body {
       }
     }
 
-    .finance_help {
+    .blue_rabbit {
       margin-top: 6rem;
       display: flex;
       flex-direction: column;
@@ -880,19 +880,104 @@ body {
       margin-left: auto;
       margin-right: auto;
 
-      .finance_help_content_container {
+      .blue_rabbit_content_container {
         margin: 6rem 0;
+        width: 85vw;
+
+        .blue_rabbit_title {
+          font-size: $title-size;
+          margin-bottom: 2.5rem;
+        }
+
+        .blue_rabbit_para {
+          font-size: $para-size;
+          line-height: 1.75rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .blue_rabbit_button {
+          border-radius: 0.5rem;
+          background-color: $button-bg;
+          padding: 0.1rem 0.75rem;
+          color: white;
+          font-size: $button-size;
+          line-height: 2.25rem;
+          border: none;
+        }
+      }
+    }
+    @media (min-width: $tablet) {
+      .blue_rabbit {
+        margin-top: 10rem;
+      }
+    }
+    @media (min-width: $laptop) {
+      .blue_rabbit {
+
+        .blue_rabbit_content_container {
+
+          .blue_rabbit_title {
+            font-size: $title_size_laptop;
+          }
+
+          .blue_rabbit_para {
+            font-size: $para_size_laptop;
+            line-height: 2rem;
+          }
+
+          .blue_rabbit_button {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+    @media (min-width: $desktop) {
+      .blue_rabbit {
+
+        .blue_rabbit_content_container {
+          width: 68rem;
+
+          .blue_rabbit_title {
+            font-size: $title_size_desktop;
+          }
+
+          .blue_rabbit_para {
+            font-size: $para_size_desktop;
+            line-height: 2rem;
+          }
+
+          .blue_rabbit_button {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .finance_help {
+      margin-top: 6rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: $navigation-bg;
+
+      .finance_help_content_container {
+        margin: 16rem 0;
         width: 85vw;
 
         .finance_help_title {
           font-size: $title-size;
           margin-bottom: 2.5rem;
+          color: $background-color;
         }
 
         .finance_help_para {
           font-size: $para-size;
           line-height: 1.75rem;
           margin-bottom: 1.5rem;
+          color: $background-color;
         }
 
         .finance_help_button_container {
@@ -914,6 +999,10 @@ body {
     @media (min-width: $tablet) {
       .finance_help {
         margin-top: 10rem;
+
+        .finance_help_content_container {
+          margin: 20rem 0;
+        }
       }
     }
     @media (min-width: $laptop) {
@@ -969,7 +1058,6 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: $navigation-bg;
 
       .new_client_container {
         width: 85vw;
@@ -978,14 +1066,12 @@ body {
         .new_client_title {
           font-size: $title-size;
           margin-bottom: 2.5rem;
-          color: $background-color;
         }
 
         .new_client_para {
           font-size: $para-size;
           line-height: 1.75rem;
           margin-bottom: 1.5rem;
-          color: $background-color;
         }
 
         .new_client_button_container {
@@ -1059,6 +1145,8 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-color: $navigation-bg;
+      margin-top: 6rem;
 
       .cta_container {
         display: flex;
@@ -1071,6 +1159,7 @@ body {
           font-size: $title-size;
           margin-bottom: 2rem;
           text-align: center;
+          color: $background-color;
         }
 
         .cta_button_container {
@@ -1086,6 +1175,11 @@ body {
             border: none;
           }
         }
+      }
+    }
+    @media (min-width: $tablet) {
+      .cta {
+        margin-top: 10rem;
       }
     }
     @media (min-width: $laptop) {
@@ -1128,7 +1222,6 @@ body {
   }
 
   .footer {
-    background-color: $navigation-bg;
 
     .footer_content_container {
       width: 90dvw;
@@ -1154,7 +1247,6 @@ body {
       }
 
       .footer_container_info {
-        color: $background-color;
 
         .footer_street {
           margin-bottom: 1.5rem;

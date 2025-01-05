@@ -681,7 +681,7 @@ body main .our-services .our_services_container .our-services_card-container .ou
     height: 18rem;
   }
 }
-body main .finance_help {
+body main .blue_rabbit {
   margin-top: 6rem;
   display: flex;
   flex-direction: column;
@@ -690,18 +690,84 @@ body main .finance_help {
   margin-left: auto;
   margin-right: auto;
 }
-body main .finance_help .finance_help_content_container {
+body main .blue_rabbit .blue_rabbit_content_container {
   margin: 6rem 0;
+  width: 85vw;
+}
+body main .blue_rabbit .blue_rabbit_content_container .blue_rabbit_title {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+body main .blue_rabbit .blue_rabbit_content_container .blue_rabbit_para {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+body main .blue_rabbit .blue_rabbit_content_container .blue_rabbit_button {
+  border-radius: 0.5rem;
+  background-color: #008080;
+  padding: 0.1rem 0.75rem;
+  color: white;
+  font-size: 0.75rem;
+  line-height: 2.25rem;
+  border: none;
+}
+@media (min-width: 768px) {
+  body main .blue_rabbit {
+    margin-top: 10rem;
+  }
+}
+@media (min-width: 1024px) {
+  body main .blue_rabbit .blue_rabbit_content_container .blue_rabbit_title {
+    font-size: 2.25rem;
+  }
+  body main .blue_rabbit .blue_rabbit_content_container .blue_rabbit_para {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+  body main .blue_rabbit .blue_rabbit_content_container .blue_rabbit_button {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1440px) {
+  body main .blue_rabbit .blue_rabbit_content_container {
+    width: 68rem;
+  }
+  body main .blue_rabbit .blue_rabbit_content_container .blue_rabbit_title {
+    font-size: 2.5rem;
+  }
+  body main .blue_rabbit .blue_rabbit_content_container .blue_rabbit_para {
+    font-size: 1.15rem;
+    line-height: 2rem;
+  }
+  body main .blue_rabbit .blue_rabbit_content_container .blue_rabbit_button {
+    font-size: 1rem;
+  }
+}
+body main .finance_help {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2D2D2D;
+}
+body main .finance_help .finance_help_content_container {
+  margin: 16rem 0;
   width: 85vw;
 }
 body main .finance_help .finance_help_content_container .finance_help_title {
   font-size: 2rem;
   margin-bottom: 2.5rem;
+  color: #F8F8F8;
 }
 body main .finance_help .finance_help_content_container .finance_help_para {
   font-size: 1rem;
   line-height: 1.75rem;
   margin-bottom: 1.5rem;
+  color: #F8F8F8;
 }
 body main .finance_help .finance_help_content_container .finance_help_button_container {
   display: flex;
@@ -719,6 +785,9 @@ body main .finance_help .finance_help_content_container .finance_help_button_con
 @media (min-width: 768px) {
   body main .finance_help {
     margin-top: 10rem;
+  }
+  body main .finance_help .finance_help_content_container {
+    margin: 20rem 0;
   }
 }
 @media (min-width: 1024px) {
@@ -753,7 +822,6 @@ body main .new_client {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #2D2D2D;
 }
 body main .new_client .new_client_container {
   width: 85vw;
@@ -762,13 +830,11 @@ body main .new_client .new_client_container {
 body main .new_client .new_client_container .new_client_title {
   font-size: 2rem;
   margin-bottom: 2.5rem;
-  color: #F8F8F8;
 }
 body main .new_client .new_client_container .new_client_para {
   font-size: 1rem;
   line-height: 1.75rem;
   margin-bottom: 1.5rem;
-  color: #F8F8F8;
 }
 body main .new_client .new_client_container .new_client_button_container {
   display: flex;
@@ -817,6 +883,8 @@ body main .cta {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #2D2D2D;
+  margin-top: 6rem;
 }
 body main .cta .cta_container {
   display: flex;
@@ -829,6 +897,7 @@ body main .cta .cta_container .cta_title {
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
+  color: #F8F8F8;
 }
 body main .cta .cta_container .cta_button_container {
   display: flex;
@@ -841,6 +910,11 @@ body main .cta .cta_container .cta_button_container .cta_button {
   color: white;
   font-size: 0.75rem;
   border: none;
+}
+@media (min-width: 768px) {
+  body main .cta {
+    margin-top: 10rem;
+  }
 }
 @media (min-width: 1024px) {
   body main .cta .cta_container .cta_title {
@@ -861,9 +935,6 @@ body main .cta .cta_container .cta_button_container .cta_button {
     font-size: 1rem;
   }
 }
-body .footer {
-  background-color: #2D2D2D;
-}
 body .footer .footer_content_container {
   width: 90dvw;
   display: flex;
@@ -883,9 +954,6 @@ body .footer .footer_content_container .footer_container .footer_logo {
 }
 body .footer .footer_content_container .footer_container .footer_facebook {
   height: 1.5rem;
-}
-body .footer .footer_content_container .footer_container_info {
-  color: #F8F8F8;
 }
 body .footer .footer_content_container .footer_container_info .footer_street {
   margin-bottom: 1.5rem;
