@@ -3,6 +3,7 @@ body {
   .service_main {
     width: 100vw;
     height: 100dvh;
+    overflow: auto;
     display: flex;
     justify-content: center;
     background-image: url("images/animal treatment.jpg");
