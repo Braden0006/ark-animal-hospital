@@ -86,19 +86,9 @@ body .new_client .new_client_container .new_client_form_container .new_client_fo
 body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_payment {
   line-height: 1.5rem;
 }
-body .new_client .new_client_container .new_client_form_container .new_client_form .signature-pad {
-  border: 1px solid black;
-  display: block;
-}
-body .new_client .new_client_container .new_client_form_container .new_client_form .signature_initial_button {
-  margin-top: 0.5rem;
-  font-size: 0.75rem;
-  padding: 0.25rem 0.5rem;
-  border-radius: 2px;
-  border: none;
-}
 body .new_client .new_client_container .new_client_form_container .new_client_form .new_client_submit_button {
   margin-bottom: 4rem;
+  margin-top: 1rem;
   border-radius: 0.5rem;
   background-color: #008080;
   padding: 0.75rem 1rem;

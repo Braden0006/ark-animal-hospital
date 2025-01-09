@@ -250,39 +250,6 @@ if (!empty($petName4)) {
     }
 }
 
-if (isset($_POST['initial']) && !empty($_POST['initial'])) {
-    $initial = $_POST['initial'];
-    $initialData = str_replace('data:image/png;base64,', '', $initial);
-    $initialData = str_replace(' ', '+', $initialData);
-    $initialImage = base64_decode($initialData);
-
-    // Save as a PNG file
-    $fileName = 'initial.png';
-    file_put_contents($fileName, $initialImage);
-}
-
-if (isset($_POST['signature2']) && !empty($_POST['signature2'])) {
-    $signature = $_POST['signature2'];
-    $signatureData = str_replace('data:image/png;base64,', '', $signature);
-    $signatureData = str_replace(' ', '+', $signatureData);
-    $signatureImage = base64_decode($signatureData);
-
-    // Save as a PNG file
-    $fileName = 'signature.png';
-    file_put_contents($fileName, $signatureImage);
-}
-
-if (isset($_POST['date']) && !empty($_POST['date'])) {
-    $date = $_POST['date'];
-    $dateData = str_replace('data:image/png;base64,', '', $date);
-    $dateData = str_replace(' ', '+', $dateData);
-    $dateImage = base64_decode($dateData);
-
-    // Save as a PNG file
-    $fileName = 'date.png';
-    file_put_contents($fileName, $dateImage);
-}
-
 $fileHandle = fopen($filePath, 'a');
 fwrite($fileHandle, $data);
 fclose($fileHandle);
@@ -304,9 +271,6 @@ try {
     $mail->addAddress($config["smtp_username"], "Braden");
 
     $mail->addAttachment('new-client.txt');
-    $mail->addAttachment('initial.png');
-    $mail->addAttachment('signature.png');
-    $mail->addAttachment('date.png');
 
     $mail->Subject = 'You have a new Client Form!';
     $mail->Body = 'Here is your newly submitted client form:';
