@@ -152,7 +152,7 @@ body main {
   flex-grow: 1;
 }
 body main .landing-page {
-  margin-top: 4rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -204,11 +204,11 @@ body main .landing-page .landing-page_container .landing-page_image {
 }
 @media (min-width: 1024px) {
   body main .landing-page {
+    margin-top: 0;
     flex-direction: row;
     max-width: 55rem;
     height: 100dvh;
     align-items: center;
-    margin-top: 0;
     gap: 4rem;
   }
   body main .landing-page .landing-page_container {
@@ -230,6 +230,11 @@ body main .landing-page .landing-page_container .landing-page_image {
   body main .landing-page .landing-page_container .landing-page_image {
     width: 28rem;
     height: 28rem;
+  }
+}
+@media (max-height: 600px) {
+  body main .landing-page {
+    margin-top: 5rem;
   }
 }
 @media (min-width: 1440px) {
