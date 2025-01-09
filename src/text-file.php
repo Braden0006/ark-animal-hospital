@@ -73,28 +73,6 @@ $spayedOrNeutered4 = $_POST['spayed-neutered4'];
 
 $filePath = 'new-client.txt';
 
-$clientData = [
-    'Name' => $firstName . " " . $middleInitial . " " . $lastName,
-    'Spouse Name' => $spouseFirstName . " " . $spouseMiddleInitial . " " . $spouseLastName,
-    'Address' => $physicalAddress,
-    'City' => $city,
-    'State' => $state,
-    'Zip' => $zip,
-    'Mailing address the same as physical address?' => $mailingAddressYesNo,
-
-    'Mailing Address' => $mailingAddress,
-    'City2' => $city2,
-    'State2' => $state2,
-    'Zip2' => $zip2,
-
-    'Phone' => $phone,
-    'Cell' => $cell,
-    'Spouses Phone' => $spousePhone,
-    'Email' => $email,
-    'Employment' => $employment,
-    'Employment Phone' => $phone2,
-];
-
 $petData = [
     'Pet Name' => $petName,
     'Pet Age' => $petAge,
@@ -154,15 +132,15 @@ if (!empty($mailingAddress)) {
 }
 
 if (!empty($city2)) {
-    $data .= "City2: $city2\n";
+    $data .= "Mailing Address City: $city2\n";
 }
 
 if (!empty($state2)) {
-    $data .= "State2: $state2\n";
+    $data .= "Mailing Address State: $state2\n";
 }
 
 if (!empty($zip2)) {
-    $data .= "Zip2: $zip2\n";
+    $data .= "Mailing Address Zip: $zip2\n";
 }
 
 if (!empty($phone)) {
@@ -182,11 +160,11 @@ if (!empty($email)) {
 }
 
 if (!empty($employment)) {
-    $data .= "Employment: $employment\n";
+    $data .= "Place of Employment: $employment\n";
 }
 
 if (!empty($phone2)) {
-    $data .= "Employment Phone: $phone2\n";
+    $data .= "Place of Employment Phone: $phone2\n";
 }
 
 $data .= "\n\n\n\nPet Info:\n\n";
