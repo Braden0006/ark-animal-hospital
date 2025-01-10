@@ -564,8 +564,8 @@ body main .our-team .show_modal {
   body main .our-team .our-team_container .card_container-two {
     max-width: 40rem;
     justify-content: flex-start;
-    padding: 0 2rem;
-    gap: 7rem;
+    padding: 0 4rem;
+    gap: 7.5rem;
   }
   body main .our-team .our_team_card_modal .our_team_card_modal_container {
     width: 60%;
@@ -949,17 +949,40 @@ body .footer .footer_content_container {
 }
 body .footer .footer_content_container .footer_container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 0.5rem;
 }
-body .footer .footer_content_container .footer_container .footer_logo {
+body .footer .footer_content_container .footer_container .footer_logo_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+body .footer .footer_content_container .footer_container .footer_logo_container .footer_logo {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 5rem;
 }
-body .footer .footer_content_container .footer_container .footer_facebook {
+body .footer .footer_content_container .footer_container .footer_logo_container .footer_logo_rabbit {
+  height: 1.75rem;
+  width: 1.75rem;
+}
+body .footer .footer_content_container .footer_container .footer_logo_container .footer_facebook {
   height: 1.5rem;
+}
+body .footer .footer_content_container .footer_container .footer_hours_container {
+  margin-left: 1rem;
+  width: 10rem;
+}
+body .footer .footer_content_container .footer_container .footer_hours_container p {
+  font-size: 0.75rem;
+  margin: 0.5rem 0;
+}
+body .footer .footer_content_container .footer_container .footer_hours_container .hours-top {
+  margin-top: 0;
+}
+body .footer .footer_content_container .footer_container .footer_hours_container .hours-bottom {
+  margin-bottom: 0;
 }
 body .footer .footer_content_container .footer_container_info .footer_street {
   margin-bottom: 1.5rem;
@@ -968,6 +991,16 @@ body .footer .footer_content_container .footer_container_info .footer_street {
 body .footer .footer_content_container .footer_container_info .footer_number {
   margin-bottom: 0.25rem;
   font-size: 0.75rem;
+}
+@media (min-width: 768px) {
+  body .footer .footer_content_container .footer_hours_container {
+    width: initial !important;
+  }
+}
+@media (min-width: 1024px) {
+  body .footer .footer_content_container .footer_container .footer_hours_container {
+    margin-left: 2rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

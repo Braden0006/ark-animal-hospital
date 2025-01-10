@@ -5,6 +5,7 @@ let card3 = document.getElementById("card3");
 let card4 = document.getElementById("card4");
 let card5 = document.getElementById("card5");
 let card6 = document.getElementById("card6");
+let card7 = document.getElementById("card7");
 
 let body = document.getElementById("body");
 
@@ -14,6 +15,7 @@ let modal3 = document.getElementById("modal3");
 let modal4 = document.getElementById("modal4");
 let modal5 = document.getElementById("modal5");
 let modal6 = document.getElementById("modal6");
+let modal7 = document.getElementById("modal7");
 
 let bar1 = document.getElementById("bar-1");
 let bar2 = document.getElementById("bar-2");
@@ -59,6 +61,12 @@ function card6Clicked() {
     body.classList.add("stop_scrolling");
 }
 
+function card7Clicked() {
+    modalBackground.classList.add("show_modal_background");
+    modal7.classList.add("show_modal");
+    body.classList.add("stop_scrolling");
+}
+
 function hideModal() {
     modalBackground.classList.remove("show_modal_background");
     modal.classList.remove("show_modal");
@@ -95,6 +103,12 @@ function hideModal6() {
     body.classList.remove("stop_scrolling");
 }
 
+function hideModal7() {
+    modalBackground.classList.remove("show_modal_background");
+    modal7.classList.remove("show_modal");
+    body.classList.remove("stop_scrolling");
+}
+
 if (card1.addEventListener) {
     card1.addEventListener("click", cardClicked);
     modal.addEventListener("click", hideModal);
@@ -124,6 +138,12 @@ if (card6.addEventListener) {
     card6.addEventListener("click", card6Clicked);
     modal6.addEventListener("click", hideModal6);
 }
+
+if (card7.addEventListener) {
+    card7.addEventListener("click", card7Clicked);
+    modal7.addEventListener("click", hideModal7);
+}
+
 
 menu.addEventListener("click", () => {
     body.classList.toggle("stop_scrolling");
