@@ -564,7 +564,7 @@ body main .our-team .show_modal {
   body main .our-team .our-team_container .card_container-two {
     max-width: 40rem;
     justify-content: flex-start;
-    padding: 0 4rem;
+    padding: 0 3rem;
     gap: 7.5rem;
   }
   body main .our-team .our_team_card_modal .our_team_card_modal_container {
