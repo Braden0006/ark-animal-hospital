@@ -1,11 +1,25 @@
 <?php
 
+session_start();
+
 $config = include("../config.php");
 
 require "../vendor/autoload.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
+
+// Validate the CSRF token
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $form_hash = md5(serialize($_POST));
+
+    if (isset($_SESSION['last_form_hash']) && $_SESSION['last_form_hash'] === $form_hash) {
+        die("Duplicate form submission detected.");
+    }
+
+    $_SESSION['last_form_hash'] = $form_hash;
+}
 
 $firstName = isset($_POST['first_name']) ? htmlspecialchars($_POST['first_name']) : "";
 $middleInitial = isset($_POST['middle_initial']) ? htmlspecialchars($_POST['middle_initial']) : "";
@@ -277,11 +291,16 @@ try {
 
     $mail->send();
 
-    echo "Message has been sent.";
-} catch (Exception) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-}
+    // Clear the file only after successful email
+    $fileHandle = fopen($filePath, 'a');
+    ftruncate($fileHandle, 0);
+    fclose($fileHandle);
 
-$fileHandle = fopen($filePath, 'a');
-ftruncate($fileHandle, 0);
-fclose($fileHandle);
+    // Redirect to a thank-you page
+    header("Location: thank_you.php");
+    exit();
+
+} catch (Exception $e) {
+    error_log("Email sending failed: " . $mail->ErrorInfo);
+    echo "Message could not be sent. Please try again later.";
+}
