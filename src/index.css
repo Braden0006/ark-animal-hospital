@@ -152,7 +152,7 @@ body main {
   flex-grow: 1;
 }
 body main .landing-page {
-  margin-top: 1rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
