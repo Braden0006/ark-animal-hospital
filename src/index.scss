@@ -1269,7 +1269,7 @@ body {
           width: 10rem;
 
           p {
-            font-size: 0.75rem;
+            font-size: 0.6rem;
             margin: 0.5rem 0;
           }
 
@@ -1287,12 +1287,12 @@ body {
 
         .footer_street {
           margin-bottom: 1.5rem;
-          font-size: 0.75rem;
+          font-size: 0.6rem;
         }
 
         .footer_number {
           margin-bottom: 0.25rem;
-          font-size: 0.75rem;
+          font-size: 0.6rem;
         }
       }
     }
@@ -1317,6 +1317,20 @@ body {
 
           .footer_hours_container {
             margin-left: 2rem;
+
+            p {
+              font-size: 0.75rem;
+            }
+          }
+        }
+        .footer_container_info {
+
+          .footer_street {
+            font-size: 0.75rem;
+          }
+
+          .footer_number {
+            font-size: 0.75rem;
           }
         }
       }
